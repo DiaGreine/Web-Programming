@@ -1,0 +1,37 @@
+MGDB: Mobile game Database
+Website specfication; Sakura Theme
+>Home
+  - Menu
+    - Home icon
+    - Search
+    - List ALL
+    - About us
+    - FAQ
+  - Random games
+  - Random categories x 3
+
+>Game info
+  - Basic info: name, icon, sample pics, rating, price, company, description.
+  - Categories: ie. Arcade, Adventure, Music, RPG. ; type of games.
+  - Tags: ie. Gacha, F2P, P2P, All-ages, PG, Japanese.
+  - Related game.
+
+>Search
+  - Categories
+  - Search System:
+    - By Tags
+    - By Company
+    - By Name
+    - By Categories
+    - Sort
+      - Alphabet
+      - Rating
+
+>List of Games
+
+>About us
+
+>FAQ
+
+
+
