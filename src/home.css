@@ -6,7 +6,7 @@
 [class*="col-"] {
 	float: left;
 	padding: 15px;
-	border: 1px solid red;
+	/* border: 1px solid red; */
 }
 
 .col-1 {width: 8.33%;}
@@ -29,10 +29,13 @@
 }
 
 .header {
-	display: block;
-	padding: 20px;
+	
+}
+
+.header img{
+	height: 80px;
+	width: 184px;
 	border-radius: 10px;
-	background-color: antiquewhite;
 }
 
 .button {
@@ -45,6 +48,7 @@
 	background-color: pink;
 	float: left;
 	transition: 0.4s;
+	border-radius: 10px;
 }
 
 .button:hover {
@@ -91,14 +95,16 @@
 }
 
 #main {
-  transition: margin-left .5s;
+	transition: margin-left .5s;
+	margin-left: 12px;
   padding: 16px;
 }
 
 .search-container input[type=text] {
+	height: 50%;
 	font-size: 20px;
-	margin-top: 10px;
 	border: none;
+	margin-top: 10px;
 }
 
 .search-container button {
@@ -109,10 +115,7 @@
   font-size: 20px;
   border: none;
 	cursor: pointer;
-	padding-top: 10px;
-	padding-right: 10px;
-	padding-bottom: 10px;
-	padding-left: 10px;
+	padding: 10px;
 }
 
 .search-container button:hover {
@@ -125,28 +128,28 @@
 	padding: 20px 10px;
 }
 
-.games-display-category {
-	background: rgb(255, 227, 249);
-	border-radius: 10px;
-	padding: 50px 10px;
-}
-
-.games-display:hover .image{
-	opacity: 0.5;
-}
-
-.icon-display {
+.games-display img{
 	border-radius: 10px;
 	width: 75px;
 	height: 75px;
-	margin-left: 30px;
+	margin-top: 10px;
+	margin-left: 25px;
+	margin-bottom: 30px;
+	transition: 0.3s;
+}
+.games-display img:hover{
+	opacity: 0.6;
+	transition: 0.3s;
 }
 
-.title {
+.games-display .title {
+	font-family: "Comic Sans MS", cursive, sans-serif;
 	font-size: 30px;
 	font-weight:bold;
-	padding: 10px;
+	padding: 5px;
+	color: black;
 	margin-left: 10px;
+	margin-bottom: 10px;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
