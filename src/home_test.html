@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="home_test.css">
+		</head>
+
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="#">Home</a>
+			<a href="#">Search</a>
+			<a href="#">List All Games</a>
+			<a href="#">About Us</a>
+			<a href="#">FAQ</a>
+		</div>
+		
+		<!-- Use any element to open the sidenav -->
+		<span class="button" onclick="openNav()">&#9776;</span>
+
+		<!-- Page Content-->
+		<div id="main">
+			<div>
+				<div class = "col-9">
+					<div class = header>
+						HEADER
+					</div>
+				</div>
+				<div class=col-3>
+					<div class="search-container">
+							<form action="/action_page.php">
+							<input type="text" placeholder="Search.." name="search">
+							<button type="submit">Submit</button>
+							</form>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<div class= "col-12">
+					<div class = games-display>
+						Display Top Rating Games Here
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<div class ="col-4">
+					<div class = games-display-category>
+						Display Random Category Games Here
+					</div>
+				</div>
+				<div class ="col-4">
+					<div class = games-display-category>
+						Display Random Category Games Here
+					</div>
+				</div>
+				<div class ="col-4">
+					<div class = games-display-category>
+						Display Random Category Games Here
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			/* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+			function openNav() {
+				document.getElementById("mySidenav").style.width = "250px";
+				document.body.style.backgroundColor = "rgba(0,0,0,0.2)";
+				document.getElementById("main").style.marginLeft = "250px";
+			}
+
+			/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+			function closeNav() {
+				document.getElementById("mySidenav").style.width = "0";
+				document.getElementById("main").style.marginLeft = "0";
+				document.body.style.backgroundColor = "white";
+			}
+		</script>
+</html>
