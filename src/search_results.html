@@ -8,7 +8,7 @@
 		<div id="mySidenav" class="sidenav">
 			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 			<a href="home.html">Home</a>
-			<a href="#">Search</a>
+			<a href="search.html">Search</a>
 			<a href="#">List All Games</a>
 			<a href="#">About Us</a>
 			<a href="#">FAQ</a>
@@ -38,46 +38,32 @@
                 </div>
             </div>
             <div class = "col-12">
-                <div class ="games-display">
-                    <table>
-                        <thead>
-                            <th>
-                                Categories:            
-                            </th>
-                            <th style="font-weight: normal">
-                                <input type="checkbox" name="action" value="Action">Action<br>
-                            </th>
-                            <th style="font-weight: normal">
-                                <input type="checkbox" name="adventure" value="Adventure">Adventure<br>
-                            </th>
-                            <th style="font-weight: normal">
-                                <input type="checkbox" name="rpg" value="RPG">RPG<br>
-                            </th>
-                        </thead>
-                    </table>
+                <div class = "col-28w">
+                    <div class = "games-display">
+
+                    </div>
                 </div>
-            </div>
-            <div class = "col-12">
-                <div class ="games-display">
-                    <table>
-                        <thead>
-                            <th>
-                                Tags:            
-                            </th>
-                            <th style="font-weight: normal">
-                                <input type="checkbox" name="f2p" value="F2P">F2P<br>
-                            </th>
-                            <th style="font-weight: normal">
-                                <input type="checkbox" name="p2p" value="P2P">P2P<br>
-                            </th>
-                            <th style="font-weight: normal">
-                                <input type="checkbox" name="ecchi" value="Ecchi">Ecchi<br>
-                            </th>
-                            <th style="font-weight: normal">
-                                <input type="checkbox" name="gacha" value="Gacha">Gacha<br>
-                            </th>
-                        </thead>
-                    </table>
+                <div class = "col-28w">
+                    <div class = "games-display">
+                        
+                    </div>
+                </div>
+                <div class = "col-28w">
+                    <div class = "games-display">
+                        
+                    </div>
+                </div>
+                <div class = "col-16w">
+                    <div class = "games-display">
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -96,5 +82,24 @@
 				document.getElementById("main").style.marginLeft = "0";
 				document.body.style.backgroundColor = "white";
 			}
+            /* When the user clicks on the button,
+            toggle between hiding and showing the dropdown content */
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+            // Close the dropdown menu if the user clicks outside of it
+            window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                    }
+                }
+            }
 		</script>
 </html>
