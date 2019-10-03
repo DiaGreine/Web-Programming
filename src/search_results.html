@@ -3,8 +3,9 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="home.css">
-		</head>
-    
+        <link rel="stylesheet" href="dropdown.css">
+    </head>
+    <body>
 		<div id="mySidenav" class="sidenav">
 			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 			<a href="home.html">Home</a>
@@ -29,7 +30,7 @@
                     <div class="search-container">
                         <form action="search_results.html">
                             <div class = "games-display">
-                                <input type="text" placeholder="Search.." name="search" style="width: 1100px;  background-color:transparent;">
+                                <input type="text" placeholder="Search.." name="search" style="width: 900px;  background-color:transparent;">
                                 <button type="submit">Submit</button>
                                 <br><br>
                             </div>
@@ -40,34 +41,51 @@
             <div class = "col-12">
                 <div class = "col-28w">
                     <div class = "games-display">
-
+                        <div>
+                            <a><img src="../assets/img/mockAPP.png" style="width:83%; height:83%"></a>
+                        </div>
+                        <div class="title" style="padding-left:15px; font-size:20px">Title</div>
+                        <div class="title" style="padding-left:15px; font-size:20px">* * * * *</div>
                     </div>
                 </div>
                 <div class = "col-28w">
                     <div class = "games-display">
-                        
+                        <div>
+                            <a><img src="../assets/img/mockAPP.png" style="width:83%; height:83%"></a>
+                        </div>
+                        <div class="title" style="padding-left:15px; font-size:20px">Title</div>
+                        <div class="title" style="padding-left:15px; font-size:20px">* * * * *</div>
                     </div>
                 </div>
                 <div class = "col-28w">
                     <div class = "games-display">
-                        
+                        <div>
+                            <a><img src="../assets/img/mockAPP.png" style="width:83%; height:83%"></a>
+                        </div>
+                        <div class="title" style="padding-left:15px; font-size:20px">Title</div>
+                        <div class="title" style="padding-left:15px; font-size:20px">* * * * *</div>
+                  
                     </div>
                 </div>
                 <div class = "col-16w">
                     <div class = "games-display">
                         <div class="dropdown">
-                            <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+                            <div onclick="myFunction()" class="dropbtn" style="font-family: 'Comic Sans MS', cursive, sans-serif">
+                                Sort by:
+                            </div>
                             <div id="myDropdown" class="dropdown-content">
-                                <a href="#">Link 1</a>
-                                <a href="#">Link 2</a>
-                                <a href="#">Link 3</a>
+                                <a href="#">Alphabetical (A-Z)</a>
+                                <a href="#">Alphabetical (Z-A)</a>
+                                <a href="#">Rating (High-Low)</a>
+                                <a href="#">Rating (Low-High)</a>
                             </div>
                         </div>
                     </div>
                 </div>
+                
             </div>
         </div>
-
+    </body>
 		<script>
 			/* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
 			function openNav() {
@@ -85,19 +103,19 @@
             /* When the user clicks on the button,
             toggle between hiding and showing the dropdown content */
             function myFunction() {
-                document.getElementById("myDropdown").classList.toggle("show");
+            document.getElementById("myDropdown").classList.toggle("show");
             }
 
             // Close the dropdown menu if the user clicks outside of it
             window.onclick = function(event) {
-            if (!event.target.matches('.dropbtn')) {
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                    var openDropdown = dropdowns[i];
-                    if (openDropdown.classList.contains('show')) {
-                        openDropdown.classList.remove('show');
-                    }
+                if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
                     }
                 }
             }
