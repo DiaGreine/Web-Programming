@@ -131,21 +131,6 @@
 	padding: 20px 10px;
 }
 
-.games-display img{
-	border-radius: 10px;
-	width: 75px;
-	height: 75px;
-	margin-top: 10px;
-	margin-left: 25px;
-	margin-bottom: 30px;
-	transition: 0.3s;
-}
-
-.games-display img:hover{
-	opacity: 0.6;
-	transition: 0.3s;
-}
-
 .games-display .title {
 	font-family: "Comic Sans MS", cursive, sans-serif;
 	font-size: 30px;
@@ -166,6 +151,34 @@
 	background: rgb(255, 216, 222);
 	border-radius: 10px;
 	text-align:center;
+}
+
+.icon-display {
+	vertical-align: top;
+	display:inline-block;
+	text-align:center;
+	margin-left: 5px;
+	width: 100px;
+}
+
+.icon-display img {
+	border-radius: 10px;
+	width: 75px;
+	height: 75px;
+	transition: 0.3s;
+}
+.icon-display img:hover {
+	opacity: 0.6;
+	transition: 0.3s;
+}
+
+.icon-display text {
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 14px;
+	font-weight:bold;
+	display: block;
+	margin-top: 3px;
+	margin-bottom: 10px;
 }
 
 /* Dropdown Button */
