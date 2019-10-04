@@ -23,6 +23,10 @@
 .col-12 {width: 100%;}
 .col-28w {width	: 28%;}
 .col-16w {width: 16%;}
+.col-20w {width: 20%;}
+.col-30w {width: 30%;}
+.col-50w {width: 50%;}
+.col-70w {width: 70%;}
 
 .row::after {
   content: "";
@@ -45,6 +49,17 @@
 	top: 50%;
 	padding: 0px 6px 2px 6px;
 	font-size: 24px;
+	display: block;
+	color: white;
+	background-color: pink;
+	float: left;
+	transition: 0.4s;
+	border-radius: 10px;
+}
+
+.morebutton{
+	position: fixed;
+	font-size: 18px;
 	display: block;
 	color: white;
 	background-color: pink;
@@ -129,6 +144,11 @@
 	background: rgb(255, 224, 229);
 	border-radius: 10px;
 	padding: 20px 10px;
+}
+
+.line{
+	padding: 0px 0px;
+	background: rgb(0,0,0);
 }
 
 .games-display .title {
