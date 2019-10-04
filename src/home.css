@@ -173,6 +173,20 @@
 	text-align:center;
 }
 
+.games-display form {
+	margin-left:20px;
+}
+
+.games-display label {
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 18px;
+	padding: 5px;
+	color: black;
+	border-radius: 10px;
+	text-align:left;
+	padding-bottom:20px;
+}
+
 .icon-display {
 	vertical-align: top;
 	display:inline-block;
