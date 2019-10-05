@@ -62,7 +62,7 @@ body {
 }
 
 .button:hover {
-	background-color: rgb(110, 110, 110);
+	background-color: rgb(20, 20, 20);
 	transition: 0.4s;
 }
 
@@ -104,7 +104,7 @@ body {
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-  color: rgb(255, 157, 173);
+  text-shadow: 0px 0px 10px rgb(190, 190, 190);
 }
 
 /* Position and style the close button (top right corner) */
@@ -143,16 +143,19 @@ body {
   border: none;
 	cursor: pointer;
 	padding: 10px;
+	transition: 0.2s;
 }
 
 .search-container button:hover {
-	background: rgb(247, 173, 185);
+	background: rgb(44, 44, 44);
+	transition: 0.2s;
 }
 
 .games-display {
 	background: rgb(100, 100, 100);
 	/* border-radius: 10px; */
 	padding: 20px 10px;
+	box-shadow: 5px 5px 5px 0px black;
 }
 
 .line{
@@ -175,15 +178,46 @@ body {
 	font-size: 30px;
 	font-weight:bold;
 	padding: 5px;
-	color: black;
+	color: rgb(230, 230, 230);
 	display: block;
-	background: rgb(255, 216, 222);
-	border-radius: 10px;
+	background: rgb(49, 49, 49);
+	/* border-radius: 10px; */
 	text-align:center;
+	box-shadow: 5px 5px 5px 0px black;
 }
 
 .games-display form {
 	margin-left:20px;
+}
+
+.games-display input[type=text] {
+	background-color:rgb(160, 160, 160);
+	border: solid;
+}
+
+.games-display form textarea {
+	margin-top: 10px;
+	margin-left: 5px;
+	background-color:rgb(160, 160, 160);
+	border: solid;
+	text-align: left;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 15px;
+}
+
+.games-display form button {
+	color: whitesmoke;
+  background: rgb(59, 59, 59);
+  font-size: 20px;
+  border: none;
+	cursor: pointer;
+	padding: 10px;
+	transition: 0.2s;
+}
+
+.games-display form button:hover {
+	background: rgb(44, 44, 44);
+	transition: 0.2s;
 }
 
 .games-display label {
@@ -205,14 +239,17 @@ body {
 }
 
 .icon-display img {
-	border-radius: 10px;
+	border-radius: 20px;
 	width: 75px;
 	height: 75px;
-	transition: 0.3s;
+	transition: 0.4s;
 }
 .icon-display img:hover {
-	opacity: 0.6;
-	transition: 0.3s;
+	/* opacity: 0.6; */
+	box-shadow: 0px 0px 10px 0px black;
+	transition: 0.4s;
+	width: 80px;
+	height: 80px;
 }
 
 .icon-display text {
