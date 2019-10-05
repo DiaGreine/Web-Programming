@@ -164,7 +164,7 @@ body {
 }
 
 .games-display .title {
-	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-family: 'Verdana';
 	font-size: 30px;
 	font-weight:bold;
 	padding: 5px;
@@ -174,7 +174,7 @@ body {
 }
 
 .games-display-titlebox {
-	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-family: "Verdana";
 	font-size: 30px;
 	font-weight:bold;
 	padding: 5px;
@@ -190,18 +190,13 @@ body {
 	margin-left:20px;
 }
 
-.games-display input[type=text] {
-	background-color:rgb(160, 160, 160);
-	border: solid;
-}
-
 .games-display form textarea {
 	margin-top: 10px;
 	margin-left: 5px;
 	background-color:rgb(160, 160, 160);
 	border: solid;
 	text-align: left;
-	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-family: "Verdana", cursive, sans-serif;
 	font-size: 15px;
 }
 
@@ -221,7 +216,7 @@ body {
 }
 
 .games-display label {
-	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-family: "Verdana";
 	font-size: 18px;
 	padding: 5px;
 	color: black;
@@ -253,7 +248,7 @@ body {
 }
 
 .icon-display text {
-	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-family: "Verdana";
 	font-size: 14px;
 	font-weight:bold;
 	display: block;
