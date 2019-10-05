@@ -159,6 +159,21 @@ body {
 	box-shadow: 5px 5px 5px 0px black;
 }
 
+.games-display a {
+	margin-left: 30px;
+	font-family: 'Verdana';
+	font-size: 25px;
+	font-weight:bold;
+	text-decoration: none;
+	color: white;
+	transition: 0.3s;
+}
+
+.games-display a:hover {
+	text-shadow:0px 0px 5px white;
+	transition:0.3s;
+}
+
 .line{
 	padding: 0px 0px;
 	background: rgb(0,0,0);
@@ -179,9 +194,9 @@ body {
 	font-size: 30px;
 	font-weight:bold;
 	padding: 5px;
-	color: rgb(255, 255, 255);
+	color: white;
 	display: block;
-	background: rgb(49, 49, 49);
+	background: rgb(209, 58, 76);
 	/* border-radius: 10px; */
 	text-align:center;
 	box-shadow: 5px 5px 5px 0px black;
