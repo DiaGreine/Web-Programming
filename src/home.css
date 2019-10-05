@@ -44,6 +44,10 @@
 	border-radius: 10px;
 }
 
+body {
+	background-color:rgb(75, 75, 75);
+}
+
 .button {
 	position: fixed;
 	top: 50%;
@@ -51,10 +55,15 @@
 	font-size: 24px;
 	display: block;
 	color: white;
-	background-color: pink;
+	background-color: rgb(46, 45, 45);
 	float: left;
 	transition: 0.4s;
-	border-radius: 10px;
+	/* border-radius: 10px; */
+}
+
+.button:hover {
+	background-color: rgb(110, 110, 110);
+	transition: 0.4s;
 }
 
 .morebutton{
@@ -68,10 +77,6 @@
 	border-radius: 10px;
 }
 
-.button:hover {
-	background-color: rgb(245, 139, 157);
-}
-
 /* The side navigation menu */
 .sidenav {
   height: 100%; /* 100% Full-height */
@@ -80,7 +85,7 @@
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
 	left: 0;
-  background-color: pink; /* Black*/
+  background-color: rgb(39, 39, 39); /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -92,7 +97,7 @@
   text-decoration: none;
 	font-size: 25px;
 	font-weight: bold;
-  color: black;
+  color: whitesmoke;
   display: block;
   transition: 0.3s;
 }
@@ -125,11 +130,15 @@
 	background-color:transparent;
 }
 
+.search-container input::placeholder {
+	color:rgb(204, 204, 204);
+}
+
 .search-container button {
 	float: right;
 	border-radius: 10px;
 	color: whitesmoke;
-  background: pink;
+  background: rgb(59, 59, 59);
   font-size: 20px;
   border: none;
 	cursor: pointer;
@@ -141,8 +150,8 @@
 }
 
 .games-display {
-	background: rgb(255, 224, 229);
-	border-radius: 10px;
+	background: rgb(100, 100, 100);
+	/* border-radius: 10px; */
 	padding: 20px 10px;
 }
 
