@@ -1,94 +1,98 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="home.css">
-		</head>
 
-		<body>
-			<div id="mySidenav" class="sidenav">
-				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-				<a href="home.html">Home</a>
-				<a href="search.html">Search</a>
-				<a href="list.html">List All Games</a>
-				<a href="create.html">Add a Game</a>
-			</div>
-			
-			<!-- Use any element to open the sidenav -->
-			<span class="button" onclick="openNav()">&#9776;</span>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="home.css">
+</head>
 
-			<!-- Page Content-->
-			<div id="main">
-				<div>
-					<div class = "col-8">
-						<div class = header>
-							<img src="../assets/img/Logo.jpg" style="width: 100px; height:auto;">
-						</div>
-					</div>
-					<div class=col-4>
-						<div class="search-container">
-								<form action="/action_page.php">
-								<input type="text" placeholder="Search.." name="search">
-								<button type="submit">Submit</button>
-								</form>
-						</div>
-					</div>
+<body>
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="home.html">Home</a>
+		<a href="search.html">Search</a>
+		<a href="list.html">List All Games</a>
+		<a href="create.html">Add a Game</a>
+	</div>
 
-					<div class=col-12>
-						<div class='games-display'>
-							<div class='title'>Create new game</div>
-							<form action="#">
-								<label>Name: <input type='text' name="name" style="background-color:rgb(160, 160, 160); border:solid;"></label>
-								<p>	
-									<label>Categories: </label><br>
-									<label><input name="category" type='checkbox'> Category A </label>
-									<label><input name="category" type='checkbox'> Category B </label>
-									<label><input name="category" type='checkbox'> Category C </label>
-									<label><input name="category" type='checkbox'> Category D </label>
-								</p>
+	<!-- Use any element to open the sidenav -->
+	<span class="button" onclick="openNav()">&#9776;</span>
 
-								<p>	
-									<label>Tags: </label><br>
-									<label><input name="tags" type='checkbox'> Tag A </label>
-									<label><input name="tags" type='checkbox'> Tag B </label>
-									<label><input name="tags" type='checkbox'> Tag C </label>
-									<label><input name="tags" type='checkbox'> Tag D </label>
-								</p>
-
-								<p>
-									<label>Description:<br>
-										<textarea rows=10 cols=50>
-										</textarea>
-									</label>
-								</p>
-								<p>
-									<label> Icon: <input type="file" name="icon" accept="image/*"><br></label>
-								</p>	
-								<p>
-									<label> Images: <input type="file" name="images" accept="image/*" multiple><br></label>
-								</p>
-
-								<button input type="submit" style="margin-top:20px;padding:5px 10px;font-size:20px;font-weight:bold;font-family: 'Comic Sans MS', cursive, sans-serif;">Submit</button>
-							</form>
-						</div>
-					</div>
+	<!-- Page Content-->
+	<div id="main">
+		<div>
+			<div class="col-8">
+				<div class=header>
+					<img src="../assets/img/MGDB_icon.png" style="width: auto; height:100px;">
 				</div>
 			</div>
-		</body>
+			<div class=col-4>
+				<div class="search-container">
+					<form action="/action_page.php">
+						<input type="text" placeholder="Search.." name="search">
+						<button type="submit">Submit</button>
+					</form>
+				</div>
+			</div>
 
-		<script>
-			/* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
-			function openNav() {
-				document.getElementById("mySidenav").style.width = "250px";
-				// document.body.style.backgroundColor = "rgba(0,0,0,0.2)";
-				document.getElementById("main").style.marginLeft = "250px";
-			}
+			<div class=col-12>
+				<div class='games-display'>
+					<div class='title'>Create new game</div>
+					<form action="#">
+						<label>Name: <input type='text' name="name"
+								style="background-color:rgb(160, 160, 160); border:solid;"></label>
+						<p>
+							<label>Categories: </label><br>
+							<label><input name="category" type='checkbox'> Category A </label>
+							<label><input name="category" type='checkbox'> Category B </label>
+							<label><input name="category" type='checkbox'> Category C </label>
+							<label><input name="category" type='checkbox'> Category D </label>
+						</p>
 
-			/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
-			function closeNav() {
-				document.getElementById("mySidenav").style.width = "0";
-				document.getElementById("main").style.marginLeft = "12px";
-				// document.body.style.backgroundColor = "white";
-			}
-		</script>
+						<p>
+							<label>Tags: </label><br>
+							<label><input name="tags" type='checkbox'> Tag A </label>
+							<label><input name="tags" type='checkbox'> Tag B </label>
+							<label><input name="tags" type='checkbox'> Tag C </label>
+							<label><input name="tags" type='checkbox'> Tag D </label>
+						</p>
+
+						<p>
+							<label>Description:<br>
+								<textarea rows=10 cols=50>
+										</textarea>
+							</label>
+						</p>
+						<p>
+							<label> Icon: <input type="file" name="icon" accept="image/*"><br></label>
+						</p>
+						<p>
+							<label> Images: <input type="file" name="images" accept="image/*" multiple><br></label>
+						</p>
+
+						<button input type="submit"
+							style="margin-top:20px;padding:5px 10px;font-size:20px;font-weight:bold;font-family: 'Comic Sans MS', cursive, sans-serif;">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+<script>
+	/* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+	function openNav() {
+		document.getElementById("mySidenav").style.width = "250px";
+		// document.body.style.backgroundColor = "rgba(0,0,0,0.2)";
+		document.getElementById("main").style.marginLeft = "250px";
+	}
+
+	/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+	function closeNav() {
+		document.getElementById("mySidenav").style.width = "0";
+		document.getElementById("main").style.marginLeft = "12px";
+		// document.body.style.backgroundColor = "white";
+	}
+</script>
+
 </html>

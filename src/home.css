@@ -45,7 +45,7 @@
 }
 
 body {
-	background-color:rgb(75, 75, 75);
+	background-color:rgb(39, 39, 39);
 }
 
 .button {
@@ -55,10 +55,11 @@ body {
 	font-size: 24px;
 	display: block;
 	color: white;
-	background-color: rgb(46, 45, 45);
+	background-color: rgb(39, 39, 39);
 	float: left;
 	transition: 0.4s;
 	border-radius: 10px;
+	cursor: pointer;
 }
 
 .button:hover {
@@ -85,7 +86,7 @@ body {
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
 	left: 0;
-  background-color: rgb(39, 39, 39); /* Black*/
+  background-color: #11151c; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -131,28 +132,28 @@ body {
 }
 
 .search-container input::placeholder {
-	color:rgb(204, 204, 204);
+	color:rgb(255, 255, 255);
 }
 
 .search-container button {
 	float: right;
 	border-radius: 10px;
 	color: whitesmoke;
-  background: rgb(59, 59, 59);
+  background: #D13A4C;
   font-size: 20px;
   border: none;
 	cursor: pointer;
 	padding: 10px;
-	transition: 0.2s;
+	transition: 0.4s;
 }
 
 .search-container button:hover {
-	background: rgb(44, 44, 44);
-	transition: 0.2s;
+	background: #D13A4C;
+	transition: 0.4s;
 }
 
 .games-display {
-	background: rgb(100, 100, 100);
+	background: rgb(209, 58, 76);
 	/* border-radius: 10px; */
 	padding: 20px 10px;
 	box-shadow: 5px 5px 5px 0px black;
@@ -168,7 +169,7 @@ body {
 	font-size: 30px;
 	font-weight:bold;
 	padding: 5px;
-	color: rgb(15, 15, 15);
+	color: #11151c;
 	margin-left: 10px;
 	margin-bottom: 10px;
 }
@@ -178,7 +179,7 @@ body {
 	font-size: 30px;
 	font-weight:bold;
 	padding: 5px;
-	color: rgb(230, 230, 230);
+	color: rgb(255, 255, 255);
 	display: block;
 	background: rgb(49, 49, 49);
 	/* border-radius: 10px; */
@@ -219,7 +220,7 @@ body {
 	font-family: "Verdana";
 	font-size: 18px;
 	padding: 5px;
-	color: black;
+	color: #11151c;
 	border-radius: 10px;
 	text-align:left;
 	padding-bottom:20px;
@@ -230,13 +231,14 @@ body {
 	display:inline-block;
 	text-align:center;
 	margin-left: 5px;
+	margin-top: 10px;
 	width: 100px;
 }
 
 .icon-display img {
 	border-radius: 20px;
-	width: 75px;
-	height: 75px;
+	width: 70px;
+	height: 70px;
 	transition: 0.4s;
 }
 .icon-display img:hover {
@@ -249,7 +251,8 @@ body {
 
 .icon-display text {
 	font-family: "Verdana";
-	font-size: 14px;
+	color: #11151c;
+	font-size: 12px;
 	font-weight:bold;
 	display: block;
 	margin-top: 3px;

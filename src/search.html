@@ -1,99 +1,103 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="home.css">
-    </head>
-    <body>
-		<div id="mySidenav" class="sidenav">
-			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-				<a href="home.html">Home</a>
-				<a href="search.html">Search</a>
-				<a href="list.html">List All Games</a>
-				<a href="create.html">Add a Game</a>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="home.html">Home</a>
+		<a href="search.html">Search</a>
+		<a href="list.html">List All Games</a>
+		<a href="create.html">Add a Game</a>
+	</div>
+
+	<!-- Use any element to open the sidenav -->
+	<span class="button" onclick="openNav()">&#9776;</span>
+
+	<!-- Page Content-->
+	<div id="main">
+		<div class="col-9">
+			<div class=header>
+				<img src="../assets/img/MGDB_icon.png" style="width: auto; height:100px;">
+			</div>
 		</div>
-		
-		<!-- Use any element to open the sidenav -->
-		<span class="button" onclick="openNav()">&#9776;</span>
+		<div class="col-12">
+			<div class="header">
+				<div class="search-container">
+					<form action="search_results.html">
+						<div class="games-display">
+							<input type="text" placeholder="Search.." name="search"
+								style="width: 900px;  background-color:transparent;">
+							<button type="submit">Submit</button>
+							<br><br>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="col-12">
+			<div class="games-display">
+				<table>
+					<thead>
+						<th>
+							Categories:
+						</th>
+						<th style="font-weight: normal">
+							<input type="checkbox" name="action" value="Action">Action<br>
+						</th>
+						<th style="font-weight: normal">
+							<input type="checkbox" name="adventure" value="Adventure">Adventure<br>
+						</th>
+						<th style="font-weight: normal">
+							<input type="checkbox" name="rpg" value="RPG">RPG<br>
+						</th>
+					</thead>
+				</table>
+			</div>
+		</div>
+		<div class="col-12">
+			<div class="games-display">
+				<table>
+					<thead>
+						<th>
+							Tags:
+						</th>
+						<th style="font-weight: normal">
+							<input type="checkbox" name="f2p" value="F2P">F2P<br>
+						</th>
+						<th style="font-weight: normal">
+							<input type="checkbox" name="p2p" value="P2P">P2P<br>
+						</th>
+						<th style="font-weight: normal">
+							<input type="checkbox" name="ecchi" value="Ecchi">Ecchi<br>
+						</th>
+						<th style="font-weight: normal">
+							<input type="checkbox" name="gacha" value="Gacha">Gacha<br>
+						</th>
+					</thead>
+				</table>
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+	/* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+	function openNav() {
+		document.getElementById("mySidenav").style.width = "250px";
+		// document.body.style.backgroundColor = "rgba(0,0,0,0.2)";
+		document.getElementById("main").style.marginLeft = "250px";
+	}
 
-		<!-- Page Content-->
-		<div id="main">
-            <div class = "col-9">
-                <div class = header>
-									<img src="../assets/img/Logo.jpg" style="width: 100px; height:auto;">
-                </div>
-            </div>
-            <div class = "col-12">
-                <div class ="header">
-                    <div class="search-container">
-                        <form action="search_results.html">
-                            <div class = "games-display">
-                                <input type="text" placeholder="Search.." name="search" style="width: 900px;  background-color:transparent;">
-                                <button type="submit">Submit</button>
-                                <br><br>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <div class = "col-12">
-                <div class ="games-display">
-                    <table>
-                        <thead>
-                            <th>
-                                Categories:            
-                            </th>
-                            <th style="font-weight: normal">
-                                <input type="checkbox" name="action" value="Action">Action<br>
-                            </th>
-                            <th style="font-weight: normal">
-                                <input type="checkbox" name="adventure" value="Adventure">Adventure<br>
-                            </th>
-                            <th style="font-weight: normal">
-                                <input type="checkbox" name="rpg" value="RPG">RPG<br>
-                            </th>
-                        </thead>
-                    </table>
-                </div>
-            </div>
-            <div class = "col-12">
-                <div class ="games-display">
-                    <table>
-                        <thead>
-                            <th>
-                                Tags:            
-                            </th>
-                            <th style="font-weight: normal">
-                                <input type="checkbox" name="f2p" value="F2P">F2P<br>
-                            </th>
-                            <th style="font-weight: normal">
-                                <input type="checkbox" name="p2p" value="P2P">P2P<br>
-                            </th>
-                            <th style="font-weight: normal">
-                                <input type="checkbox" name="ecchi" value="Ecchi">Ecchi<br>
-                            </th>
-                            <th style="font-weight: normal">
-                                <input type="checkbox" name="gacha" value="Gacha">Gacha<br>
-                            </th>
-                        </thead>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </body>
-		<script>
-			/* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
-			function openNav() {
-				document.getElementById("mySidenav").style.width = "250px";
-				// document.body.style.backgroundColor = "rgba(0,0,0,0.2)";
-				document.getElementById("main").style.marginLeft = "250px";
-			}
+	/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+	function closeNav() {
+		document.getElementById("mySidenav").style.width = "0";
+		document.getElementById("main").style.marginLeft = "12px";
+		// document.body.style.backgroundColor = "white";
+	}
+</script>
 
-			/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
-			function closeNav() {
-				document.getElementById("mySidenav").style.width = "0";
-				document.getElementById("main").style.marginLeft = "0";
-				// document.body.style.backgroundColor = "white";
-			}
-        </script>
 </html>

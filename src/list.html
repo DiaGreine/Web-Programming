@@ -1,431 +1,518 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="home.css">
-		</head>
 
-		<body>
-			<div id="mySidenav" class="sidenav">
-				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-				<a href="home.html">Home</a>
-				<a href="search.html">Search</a>
-				<a href="list.html">List All Games</a>
-				<a href="create.html">Add a Game</a>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="home.html">Home</a>
+		<a href="search.html">Search</a>
+		<a href="list.html">List All Games</a>
+		<a href="create.html">Add a Game</a>
+	</div>
+
+	<!-- Use any element to open the sidenav -->
+	<span class="button" onclick="openNav()">&#9776;</span>
+
+	<!-- Page Content-->
+	<div id="main">
+		<div>
+			<div class="col-8">
+				<div class=header>
+					<img src="../assets/img/MGDB_icon.png" style="width: auto; height:100px;">
+				</div>
 			</div>
-			
-			<!-- Use any element to open the sidenav -->
-			<span class="button" onclick="openNav()">&#9776;</span>
-
-			<!-- Page Content-->
-			<div id="main">
-				<div>
-					<div class = "col-8">
-						<div class = header>
-							<img src="../assets/img/Logo.jpg" style="width: 100px; height:auto;">
-						</div>
-					</div>
-					<div class="col-4">
-						<div class="search-container">
-								<form action="/action_page.php">
-									<input type="text" placeholder="Search.." name="search">
-									<button type="submit">Submit</button>
-								</form>
-						</div>
-					</div>
+			<div class="col-4">
+				<div class="search-container">
+					<form action="/action_page.php">
+						<input type="text" placeholder="Search.." name="search">
+						<button type="submit">Submit</button>
+					</form>
 				</div>
+			</div>
+		</div>
 
-				<!-- Blank Line -->
-				<div class="col-12" style="padding:2px;"></div>
+		<!-- Blank Line -->
+		<div class="col-12" style="padding:2px;"></div>
 
-				<div>
-					<div class="col-1">
-						<div class="games-display-titlebox">A</div>
+		<div>
+			<div class="col-1">
+				<div class="games-display-titlebox">A</div>
+			</div>
+			<div class="col-12">
+				<div class="games-display">
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
 					</div>
-					<div class="col-12">
-						<div class="games-display">
-								<div class="icon-display">
-										<a><img src="../assets/img/mockAPP.png"></a>
-										<text>Mock Name</text>
-								</div>
-								<div class="icon-display">
-										<a><img src="../assets/img/mockAPP.png"></a>
-										<text>Mock Name</text>
-								</div>
-								<div class="icon-display">
-										<a><img src="../assets/img/mockAPP.png"></a>
-										<text>Mock Name</text>
-								</div>
-								<div class="icon-display">
-										<a><img src="../assets/img/mockAPP.png"></a>
-										<text>Mock Name</text>
-								</div>
-								<div class="icon-display">
-										<a><img src="../assets/img/mockAPP.png"></a>
-										<text>Mock Name</text>
-								</div>
-								<div class="icon-display">
-										<a><img src="../assets/img/mockAPP.png"></a>
-										<text>Mock Name</text>
-								</div>
-								<div class="icon-display">
-										<a><img src="../assets/img/mockAPP.png"></a>
-										<text>Mock Name</text>
-								</div>
-								<div class="icon-display">
-										<a><img src="../assets/img/mockAPP.png"></a>
-										<text>Mock Name</text>
-								</div>
-								<div class="icon-display">
-										<a><img src="../assets/img/mockAPP.png"></a>
-										<text>Mock Name</text>
-								</div>
-								<div class="icon-display">
-										<a><img src="../assets/img/mockAPP.png"></a>
-										<text>Mock Name</text>
-								</div>
-								<div class="icon-display">
-										<a><img src="../assets/img/mockAPP.png"></a>
-										<text>Mock Name</text>
-								</div>
-								<div class="icon-display">
-										<a><img src="../assets/img/mockAPP.png"></a>
-										<text>Mock Name</text>
-								</div>
-								<div class="icon-display">
-										<a><img src="../assets/img/mockAPP.png"></a>
-										<text>Mock Name</text>
-								</div>
-								<div class="icon-display">
-										<a><img src="../assets/img/mockAPP.png"></a>
-										<text>Mock Name</text>
-								</div>
-								<div class="icon-display">
-										<a><img src="../assets/img/mockAPP.png"></a>
-										<text>Mock Name</text>
-								</div>
-								<div class="icon-display">
-										<a><img src="../assets/img/mockAPP.png"></a>
-										<text>Mock Name</text>
-								</div>
-								<div class="icon-display">
-										<a><img src="../assets/img/mockAPP.png"></a>
-										<text>Mock Name</text>
-								</div>
-								<div class="icon-display">
-										<a><img src="../assets/img/mockAPP.png"></a>
-										<text>Mock Name</text>
-								</div>
-								<div class="icon-display">
-										<a><img src="../assets/img/mockAPP.png"></a>
-										<text>Mock Name</text>
-								</div>
-								<div class="icon-display">
-										<a><img src="../assets/img/mockAPP.png"></a>
-										<text>Mock Name</text>
-								</div>
-						</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
 					</div>
-				</div>
-
-				<div>
-					<div class="col-1">
-						<div class="games-display-titlebox">B</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
 					</div>
-					<div class="col-12">
-						<div class="games-display">
-								<div class="icon-display">
-										<a><img src="../assets/img/mockAPP.png"></a>
-										<text>Mock Name</text>
-								</div><div class="icon-display">
-										<a><img src="../assets/img/mockAPP.png"></a>
-										<text>Mock Name</text>
-								</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div>
-						</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
 					</div>
-				</div>
-
-				<div>
-					<div class="col-1">
-						<div class="games-display-titlebox">C</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
 					</div>
-					<div class="col-12">
-						<div class="games-display">
-								<div class="icon-display">
-										<a><img src="../assets/img/mockAPP.png"></a>
-										<text>Mock Name</text>
-								</div><div class="icon-display">
-										<a><img src="../assets/img/mockAPP.png"></a>
-										<text>Mock Name</text>
-								</div><div class="icon-display">
-										<a><img src="../assets/img/mockAPP.png"></a>
-										<text>Mock Name</text>
-								</div><div class="icon-display">
-										<a><img src="../assets/img/mockAPP.png"></a>
-										<text>Mock Name</text>
-								</div><div class="icon-display">
-										<a><img src="../assets/img/mockAPP.png"></a>
-										<text>Mock Name</text>
-								</div><div class="icon-display">
-										<a><img src="../assets/img/mockAPP.png"></a>
-										<text>Mock Name</text>
-								</div><div class="icon-display">
-										<a><img src="../assets/img/mockAPP.png"></a>
-										<text>Mock Name</text>
-								</div><div class="icon-display">
-										<a><img src="../assets/img/mockAPP.png"></a>
-										<text>Mock Name</text>
-								</div><div class="icon-display">
-										<a><img src="../assets/img/mockAPP.png"></a>
-										<text>Mock Name</text>
-								</div><div class="icon-display">
-										<a><img src="../assets/img/mockAPP.png"></a>
-										<text>Mock Name</text>
-								</div><div class="icon-display">
-										<a><img src="../assets/img/mockAPP.png"></a>
-										<text>Mock Name</text>
-								</div><div class="icon-display">
-										<a><img src="../assets/img/mockAPP.png"></a>
-										<text>Mock Name</text>
-								</div><div class="icon-display">
-										<a><img src="../assets/img/mockAPP.png"></a>
-										<text>Mock Name</text>
-								</div><div class="icon-display">
-										<a><img src="../assets/img/mockAPP.png"></a>
-										<text>Mock Name</text>
-								</div><div class="icon-display">
-										<a><img src="../assets/img/mockAPP.png"></a>
-										<text>Mock Name</text>
-								</div><div class="icon-display">
-										<a><img src="../assets/img/mockAPP.png"></a>
-										<text>Mock Name</text>
-								</div><div class="icon-display">
-										<a><img src="../assets/img/mockAPP.png"></a>
-										<text>Mock Name</text>
-								</div><div class="icon-display">
-										<a><img src="../assets/img/mockAPP.png"></a>
-										<text>Mock Name</text>
-								</div><div class="icon-display">
-										<a><img src="../assets/img/mockAPP.png"></a>
-										<text>Mock Name</text>
-								</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div>
-						</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
 					</div>
 				</div>
 			</div>
-		</body>
+		</div>
 
-		<script>
-			/* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
-			function openNav() {
-				document.getElementById("mySidenav").style.width = "250px";
-				// document.body.style.backgroundColor = "rgba(0,0,0,0.2)";
-				document.getElementById("main").style.marginLeft = "250px";
-			}
+		<div>
+			<div class="col-1">
+				<div class="games-display-titlebox">B</div>
+			</div>
+			<div class="col-12">
+				<div class="games-display">
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+				</div>
+			</div>
+		</div>
 
-			/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
-			function closeNav() {
-				document.getElementById("mySidenav").style.width = "0";
-				document.getElementById("main").style.marginLeft = "12px";
-				// document.body.style.backgroundColor = "white";
-			}
-		</script>
+		<div>
+			<div class="col-1">
+				<div class="games-display-titlebox">C</div>
+			</div>
+			<div class="col-12">
+				<div class="games-display">
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+<script>
+	/* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+	function openNav() {
+		document.getElementById("mySidenav").style.width = "250px";
+		// document.body.style.backgroundColor = "rgba(0,0,0,0.2)";
+		document.getElementById("main").style.marginLeft = "250px";
+	}
+
+	/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+	function closeNav() {
+		document.getElementById("mySidenav").style.width = "0";
+		document.getElementById("main").style.marginLeft = "12px";
+		// document.body.style.backgroundColor = "white";
+	}
+</script>
+
 </html>

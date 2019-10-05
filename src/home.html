@@ -1,288 +1,324 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="home.css">
-		</head>
 
-		<body>
-			<div id="mySidenav" class="sidenav">
-				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-				<a href="home.html">Home</a>
-				<a href="search.html">Search</a>
-				<a href="list.html">List All Games</a>
-				<a href="create.html">Add a Game</a>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="home.html">Home</a>
+		<a href="search.html">Search</a>
+		<a href="list.html">List All Games</a>
+		<a href="create.html">Add a Game</a>
+	</div>
+
+	<!-- Use any element to open the sidenav -->
+	<span class="button" onclick="openNav()">&#9776;</span>
+
+	<!-- Page Content-->
+	<div id="main">
+		<div>
+			<div class="col-8">
+				<div class=header>
+					<img src="../assets/img/MGDB_icon.png" style="width: auto; height:100px;">
+				</div>
 			</div>
-			
-			<!-- Use any element to open the sidenav -->
-			<span class="button" onclick="openNav()">&#9776;</span>
-
-			<!-- Page Content-->
-			<div id="main">
-				<div>
-					<div class = "col-8">
-						<div class = header>
-						<img src="../assets/img/Logo.jpg" style="width: 100px; height:auto;">
-						</div>
-					</div>
-					<div class=col-4>
-						<div class="search-container">
-								<form action="/action_page.php">
-								<input type="text" placeholder="Search.." name="search">
-								<button type="submit">Submit</button>
-								</form>
-						</div>
-					</div>
+			<div class=col-4>
+				<div class="search-container">
+					<form action="/action_page.php">
+						<input type="text" placeholder="Search.." name="search">
+						<button type="submit">Submit</button>
+					</form>
 				</div>
+			</div>
+		</div>
 
-				<div>
-					<div class= "col-12">
-						<div class = games-display>
-							<div class = title>Top Rating Games</div>
-							<img src="../assets/img/arrow_left.png" style="width:auto;height:50px; float:left; margin-left: 0px; margin-top: 20px">
+		<div>
+			<div class="col-12">
+				<div class=games-display>
+					<div class=title>Top Rating Games</div>
+					<img src="../assets/img/arrow_left.png"
+						style="width:auto;height:50px; float:left; margin-left: 0px; margin-top: 20px">
 
-							<div class="icon-display">
-								<a href="details.html"><img src="../assets/img/mockAPP/COD_Mobile.webp"></a>
-								<text>Call of Duty: Mobile</text>
-							</div>
-							<div class="icon-display">
-								<a><img src="../assets/img/mockAPP/Azur Lane.webp"></a>
-								<text>Azur Lane</text>
-							</div>
-							<div class="icon-display">
-								<a><img src="../assets/img/mockAPP/Clash of Clans.webp"></a>
-								<text>Clash of Clans</text>
-							</div>
-							<div class="icon-display">
-									<a><img src="../assets/img/mockAPP/Crazy Defense Heroes.webp"></a>
-									<text>Crazy Defense Heroes</text>
-							</div>
-							<div class="icon-display">
-									<a><img src="../assets/img/mockAPP/Cytus2.webp"></a>
-									<text>Cytus 2</text>
-							</div>
-							<div class="icon-display">
-									<a><img src="../assets/img/mockAPP/HK Impact 3.webp"></a>
-									<text>Honkai Impact 3</text>
-							</div>
-							<div class="icon-display">
-									<a><img src="../assets/img/mockAPP/Harbingers.webp"></a>
-									<text>Harbingers</text>
-							</div>
-							<div class="icon-display">
-									<a><img src="../assets/img/mockAPP/King's Raid.webp"></a>
-									<text>Kings's Raid</text>
-							</div>
-							<div class="icon-display">
-									<a><img src="../assets/img/mockAPP/MU_Origin2.webp"></a>
-									<text>MU Origin 2</text>
-							</div>
-
-							<img src="../assets/img/arrow_right.png" style="width:auto;height:50px; float:right; margin-right: 0px; margin-top: 20px">
-						</div>
+					<div class="icon-display">
+						<a href="details.html"><img src="../assets/img/mockAPP/COD_Mobile.webp"></a>
+						<text>Call of Duty: Mobile</text>
 					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP/Azur Lane.webp"></a>
+						<text>Azur Lane</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP/Clash of Clans.webp"></a>
+						<text>Clash of Clans</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP/Crazy Defense Heroes.webp"></a>
+						<text>Crazy Defense Heroes</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP/Cytus2.webp"></a>
+						<text>Cytus 2</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP/HK Impact 3.webp"></a>
+						<text>Honkai Impact 3</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP/Harbingers.webp"></a>
+						<text>Harbingers</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP/King's Raid.webp"></a>
+						<text>Kings's Raid</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP/MU_Origin2.webp"></a>
+						<text>MU Origin 2</text>
+					</div>
+
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP/Minecraft.webp"></a>
+						<text>Minecraft</text>
+					</div>
+
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP/Rise of Kingdoms.webp"></a>
+						<text>Rise of Kingdowms</text>
+					</div>
+
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP/SuperStar SMTOWN.webp"></a>
+						<text>SuperStar SM Town</text>
+					</div>
+
+					<img src="../assets/img/arrow_right.png"
+						style="width:auto;height:50px; float:right; margin-right: 0px; margin-top: 20px">
 				</div>
+			</div>
+		</div>
 
-				<div>
-					<div class ="col-4">
-						<div class = games-display>
-							<div class = title>Adventure Games</div>
-							<div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div>
-							<div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div>
-							<div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div>
-							<div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div>
-							<div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div>
-							<div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div>
-							<div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div>
-							<div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div>
-							<div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div>
-							<div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div>
-							<div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div>
-							<div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div>
-						</div>
+		<div>
+			<div class="col-4">
+				<div class=games-display>
+					<div class=title>Action Games</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP/Action/Archero.webp"></a>
+						<text>Archero</text>
 					</div>
-					<div class ="col-4">
-						<div class = games-display>
-							<div class = title>Music Games</div>
-							<div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div>
-						</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP/Action/COD_Mobile.webp"></a>
+						<text>Call of Duty: Mobile</text>
 					</div>
-					<div class ="col-4">
-						<div class = games-display>
-							<div class = title>RPG Games</div>
-							<div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div><div class="icon-display">
-									<a><img src="../assets/img/mockAPP.png"></a>
-									<text>Mock Name</text>
-							</div>
-						</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP/Action/Days Bygone.webp"></a>
+						<text>Days Bygone</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP/Action/Fist of the north star.webp"></a>
+						<text>FIST OF THE NORTH STAR</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP/Action/Identity V.webp"></a>
+						<text>Identity V</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP/Action/Leauge of Stickman 2.webp"></a>
+						<text>League of Stickman 2</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP/Action/Mario Kart Tour.webp"></a>
+						<text>Mario Kart Tour</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP/Action/Mobile Legends.webp"></a>
+						<text>Mobile Legends</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP/Action/Skullgirls.webp"></a>
+						<text>Skullgirls</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP/Action/Stick Fight_The Game Mobile.webp"></a>
+						<text>Stick Fight The Game</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP/Action/Super Mecha Champions.webp"></a>
+						<text>Super Mecha Champions</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP/Action/WOT Blitz.webp"></a>
+						<text>WOT Blitz</text>
 					</div>
 				</div>
 			</div>
-		</body>
+			<div class="col-4">
+				<div class=games-display>
+					<div class=title>Music Games</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP/Music/AU2 Mobile.webp"></a>
+						<text>AU2 Moblie</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP/Music/Avicii.webp"></a>
+						<text>Avicii</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP/Music/Groove Coaster 2.webp"></a>
+						<text>Groove Coaster 2</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP/Music/Lanota.webp"></a>
+						<text>Lanota</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP/Music/Lyrica.webp"></a>
+						<text>Lyrica</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP/Music/Magic Tiles 3.webp"></a>
+						<text>Magic Tiles 3</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP/Music/Marshmello Music Dance.webp"></a>
+						<text>Marshmello Music Dance</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP/Music/One More Line.webp"></a>
+						<text>One More Line</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP/Music/Project_Muse.webp"></a>
+						<text>Project: Muse</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP/Music/SuperStar SMTOWN.webp"></a>
+						<text>SuperStar SMTOWN</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP/Music/TAPSONIC TOP - Music Grand prix.webp"></a>
+						<text>TAPSONIC TOP</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP/Music/Tiles Hop.webp"></a>
+						<text>Tiles Hop</text>
+					</div>
+				</div>
+			</div>
+			<div class="col-4">
+				<div class=games-display>
+					<div class=title>RPG Games</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+					<div class="icon-display">
+						<a><img src="../assets/img/mockAPP.png"></a>
+						<text>Mock Name</text>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
 
-		<script>
-			/* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
-			function openNav() {
-				document.getElementById("mySidenav").style.width = "250px";
-				// document.body.style.backgroundColor = "rgba(0,0,0,0.2)";
-				document.getElementById("main").style.marginLeft = "250px";
-			}
+<script>
+	/* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+	function openNav() {
+		document.getElementById("mySidenav").style.width = "250px";
+		// document.body.style.backgroundColor = "rgba(0,0,0,0.2)";
+		document.getElementById("main").style.marginLeft = "250px";
+	}
 
-			/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
-			function closeNav() {
-				document.getElementById("mySidenav").style.width = "0";
-				document.getElementById("main").style.marginLeft = "12px";
-				// document.body.style.backgroundColor = "white";
-			}
-		</script>
+	/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+	function closeNav() {
+		document.getElementById("mySidenav").style.width = "0";
+		document.getElementById("main").style.marginLeft = "12px";
+		// document.body.style.backgroundColor = "white";
+	}
+</script>
+
 </html>
