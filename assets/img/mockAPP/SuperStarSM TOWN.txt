@@ -1,0 +1,101 @@
+Company: Dalcomsoft, Inc.
+Genre: Music
+Rating: 4.5
+
+Description:
+The rhythm game of SM.Ent! “SuperStar SMTOWN” is officially released!
+SuperStar Series - SMTOWN, JYPNATION, BTS, PLEDIS's first K-pop game!
+
+# Artist & Music
+
+- 46 groups of SMTOWN
+- Over 432 songs from SMTOWN artists
+
+
+# Collectable Artists Cards
+
+- Make your own card deck!
+- Collect and Upgrade
+
+
+# Challenge the league!
+
+- Weekly / SUPERSTAR League: Compete against players worldwide!
+- Upgrade your cards for higher game scores!
+
+
+# Daily Missions & Various In-game Events
+
+- Clear All Missions! Get Massive Rewards!
+- Also, many more in-game events start with SMTOWN artists comeback!
+
+▶Featured Artists◀
+KANGTA
+BoA
+TVXQ!
+Super Junior
+KyuHyun
+Super Junior-D&E
+M&D
+RYEOWOOK
+YESUNG
+Super Junior-M
+Henry
+ZhouMi
+Girls' Generation
+Girls’ Generation-TTS
+TAEYEON
+TIFFANY
+SEOHYUN
+SHINee
+TAEMIN
+JONGHYUN
+f(x)
+AMBER
+LUNA
+EXO-K
+EXO-M
+LAY
+EXO-CBX
+Red Velvet
+NCT U-The 7th Sense
+NCT U-WITHOUT YOU
+NCT 127
+NCT DREAM
+SMTOWN
+
+[Access Permission Rights For Smart Device App]
+
+SuperStar SMTOWN hereby asks you to grant permission to access specific apps in smart devices to provide the Service as set forth in these Terms of Service.
+
+*Required Access Rights*
+
+Picture (Photos / Gallery) / Video / File: To save a game data
+
+Read, Record and Save at External Storage: To save sound source data cache and game options
+
+Device ID and Call Information: Advertising Tracking Research and Token Generation For The Push Notification
+
+Wi-Fi Connection Information: To send a message about Wi-Fi connection when there is an additional data download
+
+ID: Required for 'User Account Generation and Check'
+
+-Google-
+[Access Permission Revoke]
+
+Android 6.0 or higher: Settings > Apps preference> SuperStar SMTOWN > App Info > App Permissions > Access Agree or Access Revoke
+
+Lower than Android 6.0: Need to upgrade Android version or Delete the App.
+* Lower versions (than Android 6.0) may not provide permission functions of individual apps.
+
+-Apple-
+[Access Permission Revoke]
+Settings > SuperStar SMTOWN > Access Agree or Access Revoke
+
+
+※ "Visual Setting" of the game
+
+- If beatmap notes are not coming down smoothly,
+- [My Info] - [Visual Setting] - check "Low Resolution"
+
+※ Should you have any further questions or requests, please do not hesitate to contact us BTS(Bug Tracking System) mail through "support.superstar@dalcomsoft.com" 
