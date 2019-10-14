@@ -255,7 +255,7 @@ body {
 
 .games-display {
 	background: rgb(221, 34, 65); 
-	/* border-radius: 10px;  rgb(236, 42, 65) red optons #a52752 */ 
+	/* border-radius: 10px;  rgb(236, 42, 65) red options #a52752 */ 
 	padding: 20px 10px;
 	box-shadow: 5px 5px 5px 0px black;
 }
@@ -291,6 +291,7 @@ body {
 	margin-bottom: 10px;
 }
 
+
 .games-display-titlebox {
 	font-family: "Verdana";
 	font-size: 30px;
@@ -303,6 +304,20 @@ body {
 	text-align:center;
 	box-shadow: 5px 5px 5px 0px black;
 }
+
+.games-display .text {
+	font-family: "Verdana";
+	font-weight:bold; 
+	font-size: 24px; 
+}
+
+.games-display .readmore {
+	font-family: "Verdana";
+	font-weight:bold;
+	text-align: center; 
+	font-size: 18px; 
+}
+
 
 .games-display form {
 	margin-left:20px;
