@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="home.html">Home</a>
+    <a href="search.html">Search</a>
+    <a href="list.html">List All Games</a>
+  </div>
+
+  <!-- Use any element to open the sidenav -->
+  <span class="button" onclick="openNav()">&#9776;</span>
+
+  <!-- Page Content-->
+  <div id="main">
+    <div>
+      <div class="col-8">
+        <div class=header>
+          <img src="../assets/img/MGDB_icon.png" style="width: auto; height:100px;">
+        </div>
+      </div>
+      <div class=col-4>
+        <div class="search-container">
+          <form action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12"></div>
+
+    <div class=col-2>
+      <div class="forum" style="padding: 30px 0px; margin: 0px;">
+        <img src="../assets/img/Anon.jpg"
+          style="width:80%; height:auto; margin-left: 10%; margin-right:10%; margin-top: 5%; margin-bottom: 5%;">
+        <userinfo>Comment:</userinfo> <br>
+        <userinfo>
+          Hello There!!!!
+        </userinfo>
+      </div>
+    </div>
+
+    <div class="col-10">
+      <div class="forum" style="margin-left: 2%; margin-right: 5%;">
+        <label class="title" style="margin-left: 2%;">General Info</label>
+        <p></p>
+        <div class="post">
+          <userinfo>Username: DeRickz</userinfo> <br>
+          <userinfo>Email: DeRickzRizu@gmail.com</userinfo>
+        </div>
+      </div>
+      <br>
+      <div class="games-display" style="margin-left: 2%; margin-right: 5%;">
+        <div class="title">Favorite Games</div>
+        <div class="icon-display">
+          <a href="#"><img src="../assets/img/mockAPP/COD_Mobile.webp"></a>
+          <text>Call of Duty: Mobile</text>
+        </div>
+        <div class="icon-display">
+          <a href="details_AL.html"><img src="../assets/img/mockAPP/Azur Lane.webp"></a>
+          <text>Azur Lane</text>
+        </div>
+        <div class="icon-display">
+          <a><img src="../assets/img/mockAPP/Clash of Clans.webp"></a>
+          <text>Clash of Clans</text>
+        </div>
+        <div class="icon-display">
+          <a><img src="../assets/img/mockAPP/Crazy Defense Heroes.webp"></a>
+          <text>Crazy Defense Heroes</text>
+        </div>
+        <div class="icon-display">
+          <a><img src="../assets/img/mockAPP/Cytus2.webp"></a>
+          <text>Cytus 2</text>
+        </div>
+        <div class="icon-display">
+          <a><img src="../assets/img/mockAPP/HK Impact 3.webp"></a>
+          <text>Honkai Impact 3</text>
+        </div>
+        <div class="icon-display">
+          <a><img src="../assets/img/mockAPP/Harbingers.webp"></a>
+          <text>Harbingers</text>
+        </div>
+        <div class="icon-display">
+          <a><img src="../assets/img/mockAPP/King's Raid.webp"></a>
+          <text>Kings's Raid</text>
+        </div>
+        <div class="icon-display">
+          <a><img src="../assets/img/mockAPP/MU_Origin2.webp"></a>
+          <text>MU Origin 2</text>
+        </div>
+
+        <div class="icon-display">
+          <a><img src="../assets/img/mockAPP/Minecraft.webp"></a>
+          <text>Minecraft</text>
+        </div>
+
+        <div class="icon-display">
+          <a><img src="../assets/img/mockAPP/Rise of Kingdoms.webp"></a>
+          <text>Rise of Kingdoms</text>
+        </div>
+
+        <div class="icon-display">
+          <a><img src="../assets/img/mockAPP/SuperStar SMTOWN.webp"></a>
+          <text>SuperStar SM Town</text>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+<script>
+  /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    // document.body.style.backgroundColor = "rgba(0,0,0,0.2)";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+
+  /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft = "12px";
+    // document.body.style.backgroundColor = "white";
+  }
+</script>
+
+</html>
