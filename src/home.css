@@ -88,7 +88,7 @@ body {
 	top: 0; /* Stay at the top */
 	  left: 0;
 	background-image: url("bg/switchneon.png");
-	background-size: 1920px 1080px;
+	background-size: 1920px 110%;
 	overflow-x: hidden; /* Disable horizontal scroll */
 	padding-top: 60px; /* Place content 60px from the top */
 	transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -156,7 +156,7 @@ body {
 }
 
 .forum {
-	background: rgb(209, 58, 76);
+	background: #00c3e3;
 	/* border-radius: 10px; */
 	box-shadow: 5px 5px 5px 0px black;
 	margin-left: 150px;
