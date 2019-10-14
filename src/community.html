@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="home.html">Home</a>
+		<a href="search.html">Search</a>
+		<a href="list.html">List All Games</a>
+	</div>
+
+	<!-- Use any element to open the sidenav -->
+	<span class="button" onclick="openNav()">&#9776;</span>
+
+	<!-- Page Content-->
+	<div id="main">
+		<div>
+			<div class="col-8">
+				<div class=header>
+					<img src="../assets/img/MGDB_icon.png" style="width: auto; height:100px;">
+				</div>
+			</div>
+			<div class=col-4>
+				<div class="search-container">
+					<form action="/action_page.php">
+						<input type="text" placeholder="Search.." name="search">
+						<button type="submit">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div>
+			<div class="col-12"> 
+				 <div class="forum">
+					 <label class="title">General Discussion</label>
+					 <label class="post"><img src="../assets/img/MGDB_icon.png" style="width: auto; height:30px; margin-right: 20px;">Topic: Please recommeded me some RPG games</label>
+					 <label class="post"><img src="../assets/img/MGDB_icon.png" style="width: auto; height:30px; margin-right: 20px;">Topic: Gacha problems</label>
+					 <label class="post"><img src="../assets/img/MGDB_icon.png" style="width: auto; height:30px; margin-right: 20px;">Topic: How to use VPN?</label>
+					 <label class="post"><img src="../assets/img/MGDB_icon.png" style="width: auto; height:30px; margin-right: 20px;">Topic: Smartphone recommendation?</label>
+				 </div>
+			</div>
+			<div class="col-12"> 
+					<div class="forum">
+						<label class="title">Game Recommendation</label>
+						<label class="post">Topic: Please recommeded me some RPG games</label>
+						<label class="post">Topic: Gacha problems</label>
+						<label class="post">Topic: How to use VPN?</label>
+						<label class="post">Topic: Smartphone recommendation?</label>
+					</div>
+			 </div>
+			 <div class="col-12"> 
+					<div class="forum">
+						<label class="title">Bug Report</label>
+						<label class="post">Topic: Please recommeded me some RPG games</label>
+						<label class="post">Topic: Gacha problems</label>
+						<label class="post">Topic: How to use VPN?</label>
+						<label class="post">Topic: Smartphone recommendation?</label>
+					</div>
+			 </div>
+		</div>
+	</div>
+</body>
+
+<script>
+	/* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+	function openNav() {
+		document.getElementById("mySidenav").style.width = "250px";
+		// document.body.style.backgroundColor = "rgba(0,0,0,0.2)";
+		document.getElementById("main").style.marginLeft = "250px";
+	}
+
+	/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+	function closeNav() {
+		document.getElementById("mySidenav").style.width = "0";
+		document.getElementById("main").style.marginLeft = "12px";
+		// document.body.style.backgroundColor = "white";
+	}
+</script>
+
+</html>
