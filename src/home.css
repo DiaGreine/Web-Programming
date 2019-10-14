@@ -49,7 +49,8 @@ text{
 }
 
 body {
-	background-color:rgb(39, 39, 39);
+	background-image: url("bg/materialwhite.jpg");
+	background-size: 1920px 1080px;
 }
 
 .button {
@@ -84,17 +85,19 @@ body {
 
 /* The side navigation menu */
 .sidenav {
-  height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-	left: 0;
-  background-color: #11151c; /* Black*/
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+	height: 100%; /* 100% Full-height */
+	width: 0; /* 0 width - change this with JavaScript */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Stay on top */
+	top: 0; /* Stay at the top */
+	  left: 0;
+	background-image: url("bg/switchneon.png");
+	background-size: 1920px 1080px;
+	overflow-x: hidden; /* Disable horizontal scroll */
+	padding-top: 60px; /* Place content 60px from the top */
+	transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
+  
 
 /* The navigation menu links */
 .sidenav a {
@@ -136,7 +139,7 @@ body {
 }
 
 .search-container input::placeholder {
-	color:rgb(255, 255, 255);
+	color:rgb(0, 0, 0);
 }
 
 .search-container button {
@@ -235,8 +238,8 @@ body {
 }
 
 .games-display {
-	background: rgb(209, 58, 76);
-	/* border-radius: 10px; */
+	background: rgb(221, 34, 65); 
+	/* border-radius: 10px;  rgb(236, 42, 65) red optons #a52752 */ 
 	padding: 20px 10px;
 	box-shadow: 5px 5px 5px 0px black;
 }
