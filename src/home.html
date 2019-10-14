@@ -4,6 +4,7 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="home.css">
+	<link rel="stylesheet" href="dropdown.css">
 </head>
 
 <body>
@@ -33,6 +34,18 @@
 						<input type="text" placeholder="Search.." name="search">
 						<button type="submit">Submit</button>
 					</form>
+				</div>
+				<div class="dropdown">
+					<div onclick="LoginLogout()" class="dropbtn" style="font-family: 'Comic Sans MS', cursive, sans-serif;">
+						Login
+					</div>
+					<div id="myDropdown" class="dropdown-content">
+						<form>
+							<label>Username:<input type="text"></label>
+							<label>Password:<input type="text"></label>
+							<input type="submit">
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -279,6 +292,24 @@
 		document.getElementById("mySidenav").style.width = "0";
 		document.getElementById("main").style.marginLeft = "12px";
 		// document.body.style.backgroundColor = "white";
+	}
+
+	function LoginLogout() {
+		document.getElementById("myDropdown").classList.toggle("show");
+	}
+
+	// Close the dropdown menu if the user clicks outside of it
+	window.onclick = function (event) {
+		if (!event.target.matches('.dropbtn')) {
+			var dropdowns = document.getElementsByClassName("dropdown-content");
+			var i;
+			for (i = 0; i < dropdowns.length; i++) {
+				var openDropdown = dropdowns[i];
+				if (openDropdown.classList.contains('show')) {
+					openDropdown.classList.remove('show');
+				}
+			}
+		}
 	}
 </script>
 
