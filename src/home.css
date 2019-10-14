@@ -46,7 +46,7 @@ text{
 
 body {
 	background-image: url("bg/materialwhite.jpg");
-	background-size: 1920px 1080px;
+	background-size: 100%;
 }
 
 .button {
