@@ -160,7 +160,6 @@ body {
 	background: rgb(209, 58, 76);
 	/* border-radius: 10px; */
 	box-shadow: 5px 5px 5px 0px black;
-	margin-top: 10px;
 	margin-left: 150px;
 	margin-right: 150px;
 	padding: 30px 0 0 0;
@@ -171,18 +170,68 @@ body {
 	font-size: 30px;
 	font-weight:bold;
 	color: #11151c;
-	padding: 10px; 
+	padding: 20px;
 }
 
 .forum .post {
 	display:block;
 	background:rgb(173, 173, 173);
+	margin-bottom: 1px;
+	padding: 20px;
+}
+
+.forum content {
+	display:block;
+	background-color: gray;
 	font-family: 'Verdana';
 	font-size: 20px;
 	font-weight:bold;
 	color: #11151c;
-	padding: 20px;
-	margin-bottom: 1px;
+	padding-left: 75px;
+	padding-right: 75px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.forum .post img {
+	height: 30px;
+	width: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.user-sidebar {
+	background: rgb(209, 58, 76);
+	/* border-radius: 10px; */
+	box-shadow: 5px 5px 5px 0px black;
+	padding: 30px 0 0 0;
+	margin-left: 150px;
+}
+
+.user-sidebar username {
+	font-family: 'Verdana';
+	font-size: 30px;
+	font-weight:bold;
+	color: #11151c;
+	margin-left: 15px;
+}
+
+.user-sidebar status {
+	display:block;
+	background-color: gray;
+	font-family: 'Verdana';
+	font-size: 15px;
+	font-weight:bold;
+	color: #11151c;
+	padding-left: 20px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.user-sidebar text {
+	font-family: 'Verdana';
+	font-size: 20px;
+	color: #11151c;
 }
 
 .games-display {
@@ -193,6 +242,7 @@ body {
 }
 
 .games-display a {
+
 	margin-left: 30px;
 	font-family: 'Verdana';
 	font-size: 25px;
