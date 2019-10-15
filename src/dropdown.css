@@ -45,6 +45,29 @@
     display: block;
 }
 
+.dropdown-content form label{
+	font-family: 'Verdana';
+	font-size: 20px;
+	color: #11151c;
+}
+
+.dropdown-content form button {
+	border-radius: 10px;
+	color: whitesmoke;
+  background: #D13A4C;
+  font-size: 15px;
+  border: none;
+	cursor: pointer;
+	padding: 5px;
+	transition: 0.4s;
+	margin: 5px;
+}
+
+.dropdown-content form button:hover {
+	background: rgb(245, 139, 157);
+	transition: 0.4s;
+}
+
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {background-color: #ddd}
 
