@@ -1,0 +1,406 @@
+
+* {
+	box-sizing: border-box;
+}
+
+[class*="col-"] {
+	float: left;
+	padding: 15px;
+	/* border: 1px solid red; */
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+.col-28w {width	: 28%;}
+.col-16w {width: 16%;}
+.col-20w {width: 20%;}
+.col-30w {width: 30%;}
+.col-50w {width: 50%;}
+.col-70w {width: 70%;}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.header img{
+	height: 80px;
+	width: 184px;
+	border-radius: 10px;
+}
+
+text{
+	padding-left: 25px
+}
+
+body {
+	background-image: url("bg/materialwhite.jpg");
+	background-size: 100%;
+}
+
+.button {
+	position: fixed;
+	top: 50%;
+	padding: 0px 6px 2px 6px;
+	font-size: 24px;
+	display: block;
+	color: white;
+	background-color: rgb(39, 39, 39);
+	float: left;
+	transition: 0.4s;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.button:hover {
+	background-color: rgb(20, 20, 20);
+	transition: 0.4s;
+}
+
+.morebutton{
+	position: fixed;
+	font-size: 18px;
+	display: block;
+	color: white;
+	background-color: pink;
+	float: left;
+	transition: 0.4s;
+	border-radius: 10px;
+}
+
+/* The side navigation menu */
+.sidenav {
+	height: 100%; /* 100% Full-height */
+	width: 0; /* 0 width - change this with JavaScript */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Stay on top */
+	top: 0; /* Stay at the top */
+	  left: 0;
+	background-image: url("bg/switchneon.png");
+	background-size: 1920px 110%;
+	overflow-x: hidden; /* Disable horizontal scroll */
+	padding-top: 60px; /* Place content 60px from the top */
+	transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+  
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+	font-size: 25px;
+	font-weight: bold;
+  color: whitesmoke;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  text-shadow: 0px 0px 10px rgb(190, 190, 190);
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+	transition: margin-left .5s;
+	margin-left: 12px;
+  padding: 16px;
+}
+
+.search-container input[type=text] {
+	height: 50%;
+	font-size: 20px;
+	border: none;
+	margin-top: 10px;
+	background-color:transparent;
+}
+
+.search-container input::placeholder {
+	color:rgb(0, 0, 0);
+}
+
+.search-container button {
+	float: right;
+	border-radius: 10px;
+	color: whitesmoke;
+  background: #D13A4C;
+  font-size: 20px;
+  border: none;
+	cursor: pointer;
+	padding: 10px;
+	transition: 0.4s;
+}
+
+.search-container button:hover {
+	background: rgb(245, 139, 157);
+	transition: 0.4s;
+}
+
+.forum {
+	background: #00c3e3;
+	/* border-radius: 10px; */
+	box-shadow: 5px 5px 5px 0px black;
+	margin-left: 150px;
+	margin-right: 150px;
+	padding: 30px 0 0 0;
+}
+
+.forum .title {
+	font-family: 'Verdana';
+	font-size: 30px;
+	font-weight:bold;
+	color: #11151c;
+	padding: 20px;
+}
+
+.forum .post {
+	display:block;
+	background:rgb(225, 225 ,225);
+	padding: 20px;
+}
+
+.forum userinfo {
+	font-family: 'Verdana';
+	font-size: 20px;
+	font-weight:bold;
+	color: #11151c;
+	margin-left: 5%;
+}
+
+.forum content {
+	display:block;
+	background-color: rgb(225, 225 ,225);
+	font-family: 'Verdana';
+	font-size: 20px;
+	font-weight:bold;
+	color: #11151c;
+	padding-left: 75px;
+	padding-right: 75px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.forum .post img {
+	height: 30px;
+	width: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	
+}
+
+.forum .post a {
+	text-decoration: none;
+	color: rgb(17, 21, 28);
+	transition: 0.3s;
+	font-family: 'Verdana';
+	font-size: 20px;
+	font-weight:bold;
+}
+
+.forum .post a:hover {
+	color: rgb(121, 121, 121);
+	transition: 0.3s;
+}
+
+.user-sidebar {
+	background: rgb(209, 58, 76);
+	/* border-radius: 10px; */
+	box-shadow: 5px 5px 5px 0px black;
+	padding: 30px 0 0 0;
+	margin-left: 150px;
+}
+
+.user-sidebar username {
+	font-family: 'Verdana';
+	font-size: 30px;
+	font-weight:bold;
+	color: #11151c;
+	margin-left: 15px;
+}
+
+.user-sidebar status {
+	display:block;
+	background-color: rgb(225, 225 ,225);
+	font-family: 'Verdana';
+	font-size: 15px;
+	font-weight:bold;
+	color: #11151c;
+	padding-left: 20px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.user-sidebar text {
+	font-family: 'Verdana';
+	font-size: 20px;
+	color: #11151c;
+}
+
+.user-sidebar img {
+	width: 100%; 
+	height: auto;
+	margin-bottom: 0px;
+}
+
+.games-display {
+	background: rgb(221, 34, 65); 
+	/* border-radius: 10px;  rgb(236, 42, 65) red options #a52752 */ 
+	padding: 20px 10px;
+	box-shadow: 5px 5px 5px 0px black;
+}
+
+.games-display a {
+
+	margin-left: 30px;
+	font-family: 'Verdana';
+	font-size: 25px;
+	font-weight:bold;
+	text-decoration: none;
+	color: white;
+	transition: 0.3s;
+}
+
+.games-display a:hover {
+	text-shadow:0px 0px 5px white;
+	transition:0.3s;
+}
+
+.line{
+	padding: 0px 0px;
+	background: rgb(0,0,0);
+}
+
+.games-display .title {
+	font-family: 'Verdana';
+	font-size: 30px;
+	font-weight:bold;
+	padding: 5px;
+	color: #11151c;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+
+.games-display-titlebox {
+	font-family: "Verdana";
+	font-size: 30px;
+	font-weight:bold;
+	padding: 5px;
+	color: white;
+	display: block;
+	background: rgb(209, 58, 76);
+	/* border-radius: 10px; */
+	text-align:center;
+	box-shadow: 5px 5px 5px 0px black;
+}
+
+.games-display .text {
+	font-family: "Verdana";
+	font-weight:bold; 
+	font-size: 24px; 
+}
+
+.games-display .readmore {
+	font-family: "Verdana";
+	font-weight:bold;
+	text-align: center; 
+	font-size: 18px; 
+}
+
+
+.games-display form {
+	margin-left:20px;
+}
+
+.games-display form textarea {
+	margin-top: 10px;
+	margin-left: 5px;
+	background-color:rgb(160, 160, 160);
+	border: solid;
+	text-align: left;
+	font-family: "Verdana", cursive, sans-serif;
+	font-size: 15px;
+}
+
+.games-display form button {
+	color: whitesmoke;
+  background: rgb(59, 59, 59);
+  font-size: 20px;
+  border: none;
+	cursor: pointer;
+	padding: 10px;
+	transition: 0.2s;
+}
+
+.games-display form button:hover {
+	background: rgb(44, 44, 44);
+	transition: 0.2s;
+}
+
+.games-display label {
+	font-family: "Verdana";
+	font-size: 18px;
+	padding: 5px;
+	color: #11151c;
+	border-radius: 10px;
+	text-align:left;
+	padding-bottom:20px;
+}
+
+.icon-display {
+	vertical-align: top;
+	display:inline-block;
+	text-align:center;
+	margin-left: 5px;
+	margin-top: 10px;
+	width: 100px;
+}
+
+.icon-display img {
+	border-radius: 20px;
+	width: 70px;
+	height: 70px;
+	transition: 0.4s;
+}
+.icon-display img:hover {
+	/* opacity: 0.6; */
+	box-shadow: 0px 0px 10px 0px black;
+	transition: 0.4s;
+	width: 80px;
+	height: 80px;
+}
+
+.icon-display text {
+	font-family: "Verdana";
+	color: #11151c;
+	font-size: 12px;
+	font-weight:bold;
+	display: block;
+	margin-top: 3px;
+	margin-bottom: 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
