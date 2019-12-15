@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="navbar">
+      <img class="logo" src="../assets/img/MGDB_icon.png" />
+      <div style="margin-left: 32.5%;">
+        <div class="dropdown">
+          <button class="dropbtn">
+            Search
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Basic Search</a>
+            <a href="#">Advance Search</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">
+            Catalogue
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">All Games</a>
+            <a href="#">Ranking</a>
+            <a href="#">Categories</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">
+            Community
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">News</a>
+            <a href="#">Forum</a>
+            <a href="#">Find User</a>
+          </div>
+        </div>
+
+        <a href="#">Contact Us</a>
+
+        <div class="dropdown" style="float:right;">
+          <button class="dropbtn" style="margin-right: 10px;">
+            Login / Register
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <form>
+              <label>Username:<input type="text" name="un"/></label>
+              <label>Password:<input type="text"/></label>
+              <button type="submit" value="Submit">Log in</button>
+              <button type="submit" value="Register" style="margin-left:10%;">
+                Register
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Content -->
+
+    <form>
+      <div class="col-12">
+        <div class="search-label">
+          <header>Search</header>
+          <container>
+            <input
+              type="text"
+              placeholder="Search..."
+              name="search"
+              style="width: 100%;background-color:transparent;
+            border:none;font-size:30px;color:white;"
+            />
+            <input type="submit" />
+          </container>
+        </div>
+      </div>
+
+      <div class="col-12" style="margin-top: 50px;">
+        <div class="search-advance">
+          <header>Categories:</header>
+          <wrapper>
+            <input type="checkbox" name="action" value="Action"> Action
+            <input type="checkbox" name="rpg" value="RPG"> RPG
+            <input type="checkbox" name="music" value="Music"> Music
+            <input type="checkbox" name="casual" value="Music"> Casual
+            <input type="checkbox" name="racing" value="Racing"> Racing
+            <input type="checkbox" name="cooking" value="Cooking"> Cooking
+            <input type="checkbox" name="horror" value="Horror"> Horror
+          </wrapper>
+        </div>
+      </div>
+
+      <div class="col-12" style="margin-top: 50px;">
+        <div class="search-advance">
+          <header>Tags:</header>
+          <wrapper>
+            <input type="checkbox" name="f2p" value="F2P"> F2P
+            <input type="checkbox" name="p2p" value="P2P"> P2P
+            <input type="checkbox" name="auto" value="Auto"> Auto
+            <input type="checkbox" name="rhythm" value="Rhythm"> Rhythm
+            <input type="checkbox" name="space" value="Space"> Space
+            <input type="checkbox" name="open_world" value="Open World"> Open World
+            <input type="checkbox" name="single" value="Single"> Single Player
+            <input type="checkbox" name="nulti" value="Multi"> Multiplayer
+          </wrapper>
+        </div>
+      </div>
+    </form>
+  </body>
+
+</html>
