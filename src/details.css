@@ -117,10 +117,57 @@ table {
   background-color: #f2f2f2;
 }
 
+.apptitle
+{
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  padding-left: 10px;
+}
+
+.appsubtitle
+{
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+.appdetails
+{
+  color:white;
+  font-size:14px;
+  padding-left: 10px;
+}
+
+.appminordetails
+{
+  color:white;
+  font-size:10px;
+  padding-left: 10px;
+}
+
 .games-display {
 	/* border-radius: 10px;  rgb(236, 42, 65) red options #a52752 */ 
 	padding: 20px 10px;
-	box-shadow: 0px 1px 1px 0px black;
+  box-shadow: 0px 1px 0px 0px black;
+  background-color: rgb(17, 17, 17);
+}
+.games-display2 {
+	/* border-radius: 10px;  rgb(236, 42, 65) red options #a52752 */ 
+	padding: 20px 10px;
+  box-shadow: 0px 1px 2px 0px black;
+  background-color: rgb(39, 39, 39);
+}
+
+.related-apps
+{
+  width:90%; 
+  padding:10px;
+  /* doesnt work  */
+}
+
+.app-image
+{
+  height:300px;
 }
 
 /* Slideshow container */
