@@ -7,7 +7,9 @@
 
   <body>
     <div class="navbar">
-      <img class="logo" src="../assets/img/MGDB_icon.png" />
+      <a href="home.html">
+        <img class="logo" src="../assets/img/MGDB_text_icon.png" style="margin-bottom:-8px; margin-top:-5px">
+      </a>
       <div style="margin-left: 32.5%;">
         <div class="dropdown">
           <button class="dropbtn">
@@ -15,8 +17,8 @@
             <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-content">
-            <a href="#">Basic Search</a>
-            <a href="#">Advance Search</a>
+            <a href="search.html">Basic Search</a>
+            <a href="search.html">Advance Search</a>
           </div>
         </div>
 
@@ -27,8 +29,9 @@
           </button>
           <div class="dropdown-content">
             <a href="#">All Games</a>
-            <a href="#">Ranking</a>
+            <a href="rankings.html">Ranking</a>
             <a href="#">Categories</a>
+            <a href="app_details.html">Test AppDetail</a>
           </div>
         </div>
 
@@ -74,7 +77,6 @@
           src="https://cdn.discordapp.com/attachments/385426196403585025/646293351976402954/Screen_Shot_2562-11-19_at_17.18.52.png"
           style="width:100%"
         />
-        <div class="text">Caption Text</div>
       </div>
 
       <div class="mySlides fade">
@@ -83,7 +85,6 @@
           src="https://cdn.discordapp.com/attachments/385426196403585025/646293351976402954/Screen_Shot_2562-11-19_at_17.18.52.png"
           style="width:100%"
         />
-        <div class="text">Caption Two</div>
       </div>
 
       <div class="mySlides fade">
@@ -92,7 +93,6 @@
           src="https://cdn.discordapp.com/attachments/385426196403585025/646293351976402954/Screen_Shot_2562-11-19_at_17.18.52.png"
           style="width:100%"
         />
-        <div class="text">Caption Three</div>
       </div>
 
       <!-- Next and previous buttons -->
@@ -110,7 +110,7 @@
 
     <div class="col-12">
       <div class="ranking-label">
-        <header>Top Ranking Games</header>
+        <header>Highest Rated Games</header>
         <display>
           <a class="prev">&#10094;</a>
           <game>Test 1</game>
@@ -120,7 +120,7 @@
           <a class="next">&#10095;</a>
         </display>
         <display>
-          <button>More</button>
+          <button><a href="more_page.html" style="text-decoration: none;color:white">More</a></button>
         </display>
       </div>
     </div>
@@ -221,7 +221,8 @@
 		</div>
 		
 		<div class="col-12">
-			<div class="external-link" style="padding-bottom: 40px;">
+      <div class="external-link" style="padding-bottom: 40px;">
+        <br><br>
 				<header>External Link</header>
 				<wrapper>
 						<a>&bull; Link1</a>
