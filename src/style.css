@@ -509,8 +509,93 @@ input:-webkit-autofill:active  {
   margin: 30px;
 }
 
+/* Ranking Page */
 
+.ranking-list {
+    margin-top: 30px;
+    background-color: rgb(200, 200, 200);
+    height: 500px;
+    /*text-align: left;*/
+}
 
+.ranking-list header{
+    padding-top: 50px;
+    text-align: center;
+    font-size: 40px;
+    /*margin-left: 20%;*/
+    /*font-weight: bold;*/
+    color: black;
+    margin-bottom: 50px;
+}
+
+.ranking-list game {
+    display: flex;
+    background-color: gray;
+    justify-content: left;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2px;
+}
+
+.ranking-list game img {
+    width: 175px;
+    height: 175px;
+}
+
+.ranking-list game detail {
+    width: 2000px;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-right: 100px;
+}
+
+.ranking-list game name {
+    font-size: 30px;
+}
+
+/*App Description*/
+.ranking-list game p {
+    font-size: 20px;
+}
+
+.ranking-list game categories {
+    display: block;
+    float: right;
+    background-color: darkgrey;
+    width: 400px;
+    text-align: center;
+    margin-left: 5px;
+    margin-bottom: 60px;
+}
+
+.ranking-list game tags {
+    display: flex;
+    justify-content: left;
+    background-color: darkgrey;
+    width: 800px;
+    text-align: center;
+    margin-left: 5px;
+}
+
+.ranking-list wrapper {
+    margin-left: 2px;
+    margin-top: 3px;
+}
+
+.ranking-list game .header {
+    font-size: 25px;
+    color:white;
+    margin-top: 15px;
+}
+
+.ranking-list game  genres {
+    font-size:20px;
+    color: black;
+    background-color: white;
+    display: block;
+    padding: 15px;
+    margin-top: 2px;
+}
 
 @-webkit-keyframes fade {
   from {opacity: .4}
