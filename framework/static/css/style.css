@@ -1,0 +1,661 @@
+
+* {
+	box-sizing: border-box;
+}
+
+[class*="col-"] {
+	float: left;
+	/* padding: 15px; */
+  border: 1px solid rgba(255, 0, 0, 0);
+}
+
+body {
+	margin: 0px;
+	background: rgb(180, 180, 180);
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+.col-28w {width	: 28%;}
+.col-16w {width: 16%;}
+.col-20w {width: 20%;}
+.col-30w {width: 30%;}
+.col-50w {width: 50%;}
+.col-70w {width: 70%;}
+
+.logo {
+	float: left;
+	width: 90px;
+	height: auto;
+	margin: 10px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: black;
+}
+
+.navbar a {
+  float: left;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar .dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.navbar .dropdown .dropbtn {
+  font-size: 25px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(0, 110, 255);
+}
+
+.navbar .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.navbar .dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.navbar .dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.navbar .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.navbar form {
+	font-size: 25px; 
+	margin: 10px;
+}
+
+.navbar form button {
+	display: block;
+	width: 40%;
+	float: left;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.apptitle
+{
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  padding-left: 10px;
+}
+
+.appsubtitle
+{
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+.appdetails
+{
+  color:white;
+  font-size:14px;
+  padding-left: 10px;
+}
+
+.appminordetails
+{
+  color:white;
+  font-size:10px;
+  padding-left: 10px;
+}
+
+.games-display {
+	/* border-radius: 10px;  rgb(236, 42, 65) red options #a52752 */ 
+	padding: 20px 10px;
+  box-shadow: 0px 1px 0px 0px black;
+  background-color: rgb(17, 17, 17);
+}
+.games-display2 {
+	/* border-radius: 10px;  rgb(236, 42, 65) red options #a52752 */ 
+	padding: 20px 10px;
+  box-shadow: 0px 1px 2px 0px black;
+  background-color: rgb(65, 65, 65);
+}
+
+.related-apps
+{
+  width:90%; 
+  padding:10px;
+  /* doesnt work  */
+}
+
+.app-image
+{
+  height:300px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  max-height: 500px;
+  position: relative;
+  margin: auto;
+}
+
+.slideshow-container img {
+	width: auto;
+	height: 500px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #0066ff;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.ranking-list {
+	margin-top: 30px;
+  background: #c5c5c5;
+  height: 1000px;
+}
+
+.ranking-list header{
+	padding-top: 30px;
+	text-align: center;
+	font-size: 40px;
+	color: rgb(0, 0, 0);
+}
+
+.ranking-label {
+	margin-top: 30px;
+  background-color: rgb(200, 200, 200);
+	height: 500px;
+}
+
+.ranking-label header{
+	padding-top: 30px;
+	text-align: center;
+	font-size: 40px;
+	color: black;
+}
+
+.ranking-label display {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 40px;
+}
+
+.ranking-label display game{
+	display:inline-block;
+	background-color: gray;
+	padding: 100px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.ranking-label button{
+	cursor: pointer;
+	font-size: 20px;
+	margin-top: 20px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 35%;
+	padding-right: 35%;
+	background-color: rgb(0, 68, 255);
+	color: white;
+	border: none;
+	transition: 0.4s;
+}
+
+.ranking-label button:hover {
+	background-color: rgb(45, 45, 45);
+	transition: 0.4s;
+}
+
+
+
+.ranking-label .prev, .ranking-label .next {
+  cursor: pointer;
+  position: relative;
+  /* top: 50%; */
+  width: auto;
+  margin-top: -22px;
+  padding: 25px;
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.editor-label {
+  margin-top: 30px;
+  background: rgb(200, 200 ,200);
+	height: 600px;
+}
+
+.editor-label header{
+  padding-top: 30px;
+  padding-bottom: 20px;
+	text-align: center;
+	font-size: 40px;
+	color: black;
+}
+
+.editor-label display {
+  margin-top: 5px;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: gray;
+  display: flex;
+  justify-content: left;
+}
+
+.editor-label img {
+  width: 5%;
+  height: auto;
+  margin: 40px;
+}
+
+.editor-label text {
+  margin-top: 15px;
+  color: white;
+  font-size: 30px;
+  padding: 20px;
+}
+
+.latest-topic{
+  padding: 35px;
+	text-align: center;
+	font-size: 30px;
+	color: white;
+}
+
+.latest-subtopic{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 20px;
+	color: white;
+}
+
+.external-link {
+  margin-top: 30px;
+  align-items: center;
+  background-color: rgb(85,85,85);
+}
+
+.external-link header {
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+
+.external-link wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.external-link wrapper a{
+  color: black;
+}
+
+.external-link a {
+  font-size: 15px;
+  color: gray;
+  padding: 10px;
+}
+ 
+
+/* Search Page */
+
+::placeholder {
+  color:white;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px gray inset !important;
+    -webkit-text-fill-color: white;
+}
+
+.search-label {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.search-label header {
+  font-size: 40px;
+  color: rgb(0, 0, 0);
+  margin: 50px;
+}
+
+.search-label container {
+  display:flex;
+  background-color:rgb(69,69,69);
+  padding: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.search-label input[type=submit] {
+  float: right;
+  color: white;
+  background-color: gray;
+  font-size: 30px;
+  font-weight: bold;
+  border: none;
+	cursor: pointer;
+	padding: 10px;
+}
+
+.search-advance {
+  display:flex;
+  background-color:rgb(69,69,69);
+  padding: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.search-advance header {
+  font-size: 30px;
+  color: white;
+}
+
+.search-advance wrapper {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  color: white;
+  font-size: 20px;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+.search-advance input[type=checkbox] {
+  margin-top: 5px;
+  margin-left: 20px;
+}
+
+/* Search Result Page */
+
+.search-result {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.search-result header {
+  font-size: 40px;
+  color: white;
+  margin: 50px;
+}
+
+.search-result container {
+  display:flex;
+  background-color:gray;
+  padding: 20px;
+  margin-top: 20px;
+  margin-left: 10%;
+}
+
+.search-result app {
+  display: flex;
+  justify-content: left;
+  align-content: left;
+	margin-left: 5px;
+  margin-top: 10px;
+}
+
+.search-result app img {
+	width: 150px;
+	height: 150px;
+  transition: 0.4s;
+}
+
+.search-result app img:hover {
+	/* opacity: 0.6; */
+	transition: 0.4s;
+	width: 150px;
+	height: 150px;
+}
+
+.search-result app detail {
+  margin-left: 10px;
+  text-align: left;
+}
+
+.search-result app name {
+  margin-left: 40px;
+	color: white;
+  font-size: 30px;
+}
+
+.search-result app p {
+  font-size: 20px;
+  color: white; 
+  margin-left: 40px;
+}
+
+.search-result sort {
+  display: flex;
+  background-color: gray;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.search-result sort header {
+  font-size: 30px;
+  color: white;
+  margin: 30px;
+}
+
+/* Ranking Page */
+
+.ranking-list {
+    margin-top: 30px;
+    background-color: rgb(200, 200, 200);
+    height: 500px;
+    /*text-align: left;*/
+}
+
+.ranking-list header{
+    padding-top: 50px;
+    text-align: center;
+    font-size: 40px;
+    /*margin-left: 20%;*/
+    /*font-weight: bold;*/
+    color: black;
+    margin-bottom: 50px;
+}
+
+.ranking-list game {
+    display: flex;
+    background-color: gray;
+    justify-content: left;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2px;
+}
+
+.ranking-list game img {
+    width: 175px;
+    height: 175px;
+}
+
+.ranking-list game detail {
+    width: 2000px;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-right: 100px;
+}
+
+.ranking-list game name {
+    font-size: 30px;
+}
+
+/*App Description*/
+.ranking-list game p {
+    font-size: 20px;
+}
+
+.ranking-list game categories {
+    display: block;
+    float: right;
+    background-color: darkgrey;
+    width: 400px;
+    text-align: center;
+    margin-left: 5px;
+    margin-bottom: 60px;
+}
+
+.ranking-list game tags {
+    display: flex;
+    justify-content: left;
+    background-color: darkgrey;
+    width: 800px;
+    text-align: center;
+    margin-left: 5px;
+}
+
+.ranking-list wrapper {
+    margin-left: 2px;
+    margin-top: 3px;
+}
+
+.ranking-list game .header {
+    font-size: 25px;
+    color:white;
+    margin-top: 15px;
+}
+
+.ranking-list game  genres {
+    font-size:20px;
+    color: black;
+    background-color: white;
+    display: block;
+    padding: 15px;
+    margin-top: 2px;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
