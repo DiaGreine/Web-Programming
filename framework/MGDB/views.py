@@ -5,7 +5,7 @@ from .models import *
 
 class HomepageView(ListView):
   template_name = 'home.html'
-  context_object_name = 'banner_list'
+  context_object_name = 'app'
 
   def get_queryset(self):
     return App.objects.all()
@@ -13,4 +13,5 @@ class HomepageView(ListView):
   def get_context_data(self, *, object_list=None, **kwargs):
     context = super(HomepageView, self).get_context_data(**kwargs)
     context['banner_list'] = Banner.objects.all()
+    context['rank_list'] = Rank.objects.all()
     return context

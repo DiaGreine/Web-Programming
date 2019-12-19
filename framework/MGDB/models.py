@@ -41,3 +41,10 @@ class Banner(models.Model):
   def __str__(self):
     return self.name
 
+class Rank(models.Model):
+  rank = models.IntegerField(unique=True, validators=[MinValueValidator(1), MaxValueValidator(20)], default=1, null=False)
+  app = models.ForeignKey(App, on_delete=models.CASCADE)
+
+  def __str__(self):
+    return "Rank " + str(self.rank) + ":" + self.app.name
+

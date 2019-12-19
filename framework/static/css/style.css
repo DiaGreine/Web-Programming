@@ -11,7 +11,7 @@
 
 body {
 	margin: 0px;
-	background: rgb(180, 180, 180);
+	background: rgb(32, 32, 32);
 }
 
 .col-1 {width: 8.33%;}
@@ -42,12 +42,13 @@ body {
 
 .navbar {
   overflow: hidden;
-  background-color: black;
+  background-color: rgb(32, 32, 32);
+
 }
 
 .navbar a {
   float: left;
-  font-size: 25px;
+  font-size: 20px;
   color: white;
   text-align: center;
   padding: 14px 16px;
@@ -60,7 +61,7 @@ body {
 }
 
 .navbar .dropdown .dropbtn {
-  font-size: 25px;  
+  font-size: 20px;  
   border: none;
   outline: none;
   color: white;
@@ -72,6 +73,7 @@ body {
 
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: rgb(0, 110, 255);
+  color: white;
 }
 
 .navbar .dropdown-content {
@@ -85,7 +87,7 @@ body {
 
 .navbar .dropdown-content a {
   float: none;
-  color: black;
+  color: rgb(32, 32, 32);
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -173,14 +175,14 @@ tr:nth-child(even) {
 /* Slideshow container */
 .slideshow-container {
   max-width: 100%;
-  max-height: 500px;
+  max-height: 600px;
   position: relative;
   margin: auto;
 }
 
 .slideshow-container img {
 	width: auto;
-	height: 500px;
+	height: 600px;
 }
 
 /* Hide the images by default */
@@ -248,7 +250,7 @@ tr:nth-child(even) {
 }
 
 .active, .dot:hover {
-  background-color: #0066ff;
+  background-color: rgb(15, 200, 255);
 }
 
 /* Fading animation */
@@ -273,16 +275,26 @@ tr:nth-child(even) {
 }
 
 .ranking-label {
-	margin-top: 30px;
-  background-color: rgb(200, 200, 200);
-	height: 500px;
+	margin-top: 20px;
+  background-color: rgb(238, 238, 238);
+	height: 640px;
 }
 
 .ranking-label header{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
 	padding-top: 30px;
 	text-align: center;
 	font-size: 40px;
-	color: black;
+	color: rgb(32, 32, 32);
+}
+
+.ranking-label header subheader{
+  font-family: Arial, Helvetica, sans-serif;
+	padding-top: 3px;
+	text-align: center;
+	font-size: 18px;
+	color: rgb(32, 32, 32);
 }
 
 .ranking-label display {
@@ -293,14 +305,26 @@ tr:nth-child(even) {
 }
 
 .ranking-label display game{
+  inline-size: 300px;
+  /* background-size: 400px; */
 	display:inline-block;
-	background-color: gray;
-	padding: 100px;
+	padding: 10px;
 	margin-left: 20px;
 	margin-right: 20px;
 }
 
+.ranking-label display game img{
+  width: 300px;
+}
+
+/* .ranking-label display game img:hover{
+  filter: blur(50%);
+  -webkit-filter: blur(50%);  
+  width: 300px;
+} */
+
 .ranking-label button{
+  font-family: Arial, Helvetica, sans-serif;
 	cursor: pointer;
 	font-size: 20px;
 	margin-top: 20px;
@@ -308,7 +332,7 @@ tr:nth-child(even) {
 	padding-bottom: 15px;
 	padding-left: 35%;
 	padding-right: 35%;
-	background-color: rgb(0, 68, 255);
+	background-color: rgb(15, 200, 255);
 	color: white;
 	border: none;
 	transition: 0.4s;
@@ -327,8 +351,8 @@ tr:nth-child(even) {
   /* top: 50%; */
   width: auto;
   margin-top: -22px;
-  padding: 25px;
-  color: white;
+  padding: 20px;
+  color: rgb(0, 0, 0);
   font-weight: bold;
   font-size: 50px;
   transition: 0.6s ease;
@@ -389,20 +413,25 @@ tr:nth-child(even) {
 .external-link {
   margin-top: 30px;
   align-items: center;
-  background-color: rgb(85,85,85);
+  background-color: rgb(238, 238, 238);
 }
 
 .external-link header {
   font-size: 30px;
-  color: white;
+  color: rgb(32, 32, 32);
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
 
 .external-link wrapper {
   display: flex;
-  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: space-between;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 20px;
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
 .external-link wrapper a{
@@ -583,16 +612,17 @@ input:-webkit-autofill:active  {
 
 .ranking-list game {
     display: flex;
-    background-color: gray;
+    /* background-color: gray;
     justify-content: left;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 2px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2px; */
 }
 
 .ranking-list game img {
-    width: 175px;
-    height: 175px;
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
 }
 
 .ranking-list game detail {
