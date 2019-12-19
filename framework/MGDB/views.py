@@ -1,8 +1,16 @@
 from django.shortcuts import render
-from django.views.generic import ListView
-from .models import App
+from django.views.generic import ListView, TemplateView
+from .models import *
 # Create your views here.
 
 class HomepageView(ListView):
-  model = App
   template_name = 'home.html'
+  context_object_name = 'banner_list'
+
+  def get_queryset(self):
+    return App.objects.all()
+
+  def get_context_data(self, *, object_list=None, **kwargs):
+    context = super(HomepageView, self).get_context_data(**kwargs)
+    context['banner_list'] = Banner.objects.all()
+    return context
