@@ -13,5 +13,6 @@ class HomepageView(ListView):
   def get_context_data(self, *, object_list=None, **kwargs):
     context = super(HomepageView, self).get_context_data(**kwargs)
     context['banner_list'] = Banner.objects.all()
-    context['rank_list'] = Rank.objects.all()
+    context['collection'] = MatchTable.objects.all()
+    context['editor_pick'] = EditorPick.objects.all()
     return context
