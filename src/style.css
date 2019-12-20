@@ -514,11 +514,13 @@ input:-webkit-autofill:active  {
   padding: 20px;
   margin-left: 20%;
   margin-right: 20%;
+  border-radius: 5px;
 }
 
 .search-advance header {
   font-size: 30px;
   color: white;
+  
 }
 
 .search-advance wrapper {
