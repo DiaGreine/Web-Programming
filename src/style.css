@@ -187,6 +187,11 @@ tr:nth-child(even) {
 	height: 600px;
 }
 
+.slideshow-container img:hover {
+  filter: brightness(1.2);
+  transition: 0.5s;
+}
+
 /* Hide the images by default */
 .mySlides {
   display: none;
@@ -319,11 +324,11 @@ tr:nth-child(even) {
   width: 300px;
 }
 
-/* .ranking-label display game img:hover{
-  filter: blur(50%);
-  -webkit-filter: blur(50%);  
+.ranking-label display game img:hover{
+  opacity: 0.6;
+  transition: 0.5s;
   width: 300px;
-} */
+} 
 
 .ranking-label button{
   font-family: Arial, Helvetica, sans-serif;
@@ -388,6 +393,11 @@ tr:nth-child(even) {
   width: 100%;
   height: 500px;
   object-fit: cover;
+}
+
+.editor-label img:hover {
+  opacity:0.8;
+  transition: 0.5s;
 }
 
 .editor-label text {
@@ -539,24 +549,50 @@ input:-webkit-autofill:active  {
 }
 
 /* Search Result Page */
+.search-result_banner {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color:rgb(238,238,238);
+  text-shadow: 1px 1px black;
+  background-image: 
+  linear-gradient(to bottom, rgba(155, 155, 155, 0),rgba(155, 155, 155, 0),rgba(155, 155, 155, 0), rgba(32, 32, 32)), 
+  linear-gradient(to top, rgba(155, 155, 155, 0),rgba(155, 155, 155, 0),rgba(155, 155, 155, 0), rgb(32, 32, 32)),
+  url(https://cdn.discordapp.com/attachments/657063286306635776/657585331142656001/phonegames.png);
+  background-size: cover;
+  background-position-y: top;
+}
+
+.search-result_banner header {
+  font-size: 60px;
+  color: white;
+  margin: 50px;
+  font-weight: bold;
+}
+
+.search-result header {
+  font-size: 60px;
+  color: white;
+  margin: 50px;
+  font-weight: bold;
+}
 
 .search-result {
   margin-top: 40px;
   text-align: center;
-}
-
-.search-result header {
-  font-size: 40px;
-  color: white;
-  margin: 50px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .search-result container {
   display:flex;
-  background-color:gray;
+  background-color:rgb(238, 238, 238);
   padding: 20px;
   margin-top: 20px;
   margin-left: 10%;
+  border-radius: 5px;
 }
 
 .search-result app {
@@ -565,6 +601,8 @@ input:-webkit-autofill:active  {
   align-content: left;
 	margin-left: 5px;
   margin-top: 10px;
+  border-radius: 5px;
+
 }
 
 .search-result app img {
@@ -574,7 +612,7 @@ input:-webkit-autofill:active  {
 }
 
 .search-result app img:hover {
-	/* opacity: 0.6; */
+	opacity: 0.6;
 	transition: 0.4s;
 	width: 150px;
 	height: 150px;
@@ -583,32 +621,35 @@ input:-webkit-autofill:active  {
 .search-result app detail {
   margin-left: 10px;
   text-align: left;
+
 }
 
 .search-result app name {
   margin-left: 40px;
-	color: white;
+	color: rgb(32,32,32);
   font-size: 30px;
+  font-weight: bold;
 }
 
 .search-result app p {
   font-size: 20px;
-  color: white; 
+  color: rgb(32,32,32);
   margin-left: 40px;
 }
 
 .search-result sort {
   display: flex;
-  background-color: gray;
+  background-color: rgb(238,238,238);
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 20px;
   align-items: center;
+  border-radius: 5px;
 }
 
 .search-result sort header {
   font-size: 30px;
-  color: white;
+  color: rgb(32,32,32);
   margin: 30px;
 }
 
