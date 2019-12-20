@@ -16,3 +16,17 @@ class HomepageView(ListView):
     context['collection'] = MatchTable.objects.all()
     context['editor_pick'] = EditorPick.objects.all()
     return context
+
+class SearchpageView(TemplateView):
+  template_name = 'search.html'
+
+class SearchResultView(ListView):
+  template_name ='search_result.html'
+  context_object_name = 'search_result'
+
+  def get_queryset(self):  # new
+    name = self.request.GET.get('search')
+    category = self.request.GET.get('category')
+    object_list = App.objects.filter(name__contains=name).filter(category__name__contains=category)
+
+    return object_list

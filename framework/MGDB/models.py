@@ -21,7 +21,7 @@ class Tag(models.Model):
 class App(models.Model):
   name = models.CharField(max_length=50)
   developer = models.CharField(max_length=50)
-  categories = models.ForeignKey(Category, on_delete=models.CASCADE)
+  category = models.ForeignKey(Category, on_delete=models.CASCADE)
   # tags = ArrayField(models.ForeignKey(Tag))
   # rank = models.IntegerField(default=999)
   # rating = models.FloatField(default=0)

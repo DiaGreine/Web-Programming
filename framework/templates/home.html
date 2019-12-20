@@ -7,12 +7,12 @@
 
   <body>
     <div class="navbar">
-      <a href="home.html">
+      <a href="{% url 'home' %}">
         <img class="logo" src="{% static "assets/img/MGDB_text_icon.png" %}" style="margin-bottom:-8px; margin-top:-10px">
       </a>
       <div style="align-items: center;">
         
-        <a href="search.html">Search</a> 
+        <a href="{% url 'search' %}">Search</a>
 
         <div class="dropdown">
           <button class="dropbtn">

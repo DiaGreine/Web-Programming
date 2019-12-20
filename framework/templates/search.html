@@ -1,0 +1,71 @@
+{% load static %}
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  </head>
+
+  <body>
+    <div class="navbar">
+      <a href="{% url 'home' %}">
+        <img class="logo" src="{% static "assets/img/MGDB_text_icon.png" %}" style="margin-bottom:-8px; margin-top:-10px">
+      </a>
+      <div style="align-items: center;">
+        
+        <a href="{% url 'search' %}">Search</a>
+
+        <div class="dropdown">
+          <button class="dropbtn">
+            Catalogue
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">All Games</a>
+            <a href="rankings.html">Ranking</a>
+            <a href="#">Categories</a>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+
+    <!-- Content -->
+    <br>
+    <form action="{% url 'search_result' %}">
+      <div class="col-12">
+        <div class="search-label">
+          <header>Search</header>
+        </div>
+      </div>
+
+      <div class="search-container">
+        <input
+          type="text"
+          placeholder="Search for a game..."
+          name="search"
+          style="width: 100%;background-color:transparent;
+        border:none;font-size:30px;color:white;"
+        />
+        <input type="submit" />
+      </div>
+
+      <div class="col-12" style="margin-top: 50px;">
+        <div class="search-advance">
+          <header>Categories:</header>
+          <wrapper>
+            <input type="radio" name="category" value="" checked> None
+            <input type="radio" name="category" value="Action"> Action
+            <input type="radio" name="category" value="RPG"> RPG
+            <input type="radio" name="category" value="Music"> Music
+            <input type="radio" name="category" value="Music"> Casual
+            <input type="radio" name="category" value="Racing"> Racing
+            <input type="radio" name="category" value="Cooking"> Cooking
+            <input type="radio" name="category" value="Horror"> Horror
+          </wrapper>
+        </div>
+      </div>
+
+    </form>
+  </body>
+
+</html>

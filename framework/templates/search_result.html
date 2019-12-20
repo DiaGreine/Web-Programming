@@ -1,0 +1,59 @@
+{% load static %}
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  </head>
+
+  <body>
+    <div class="navbar">
+      <a href="{% url 'home' %}">
+        <img class="logo" src="{% static "assets/img/MGDB_text_icon.png" %}" style="margin-bottom:-8px; margin-top:-10px">
+      </a>
+      <div style="align-items: center;">
+
+        <a href="{% url 'search' %}">Search</a>
+
+        <div class="dropdown">
+          <button class="dropbtn">
+            Catalogue
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">All Games</a>
+            <a href="rankings.html">Ranking</a>
+            <a href="#">Categories</a>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div class="search-result">
+      <div class="col-9">
+        {% for app in search_result %}
+          <container>
+            <app>
+              <img src="{{ app.imgUrl }}" />
+              <detail>
+                <name>{{ app.name }}</name>
+                <br />
+                <p>
+                  {{ app.description }}
+                </p>
+              </detail>
+            </app>
+          </container>
+        {% endfor %}
+      </div>
+
+      <div class="col-2">
+        <sort>
+            <header>Sort by</header><br>
+        </sort>
+      </div>
+
+    </div>
+  </body>
+</html>
