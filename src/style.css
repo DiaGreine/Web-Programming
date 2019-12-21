@@ -353,13 +353,14 @@ tr:nth-child(even) {
 }
 
 .ranking-label display game img{
+  transition: 0.5s;
   width: 260px;
   border-radius: 5px;
 }
 
 .ranking-label display game img:hover{
-  opacity: 0.6;
   transition: 0.5s;
+  opacity: 0.6;
   width: 300px;
 } 
 
@@ -471,6 +472,7 @@ tr:nth-child(even) {
 }
 
 .ranking-page display game img{
+  transition: 0.5s;
   width: 150px;
   border-radius: 5px;
 }
