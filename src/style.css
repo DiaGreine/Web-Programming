@@ -817,8 +817,9 @@ input:-webkit-autofill:active  {
   font-weight: lighter;
 }
 
-.search-result app p {
-  font-size: 20px;
+.search-result app pre {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
   color: rgb(32,32,32);
   margin-left: 40px;
 }
