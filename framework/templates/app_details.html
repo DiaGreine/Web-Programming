@@ -65,7 +65,7 @@
             Description
         </div>
         <div class="appdetails">
-            <p>{{ app.description }}</p>
+            <pre>{{ app.description }}</pre>
         </div>
         <br>
         <div class="appsubtitle">
@@ -76,12 +76,15 @@
         </div>
     </div>
     <br>
-    <div class="games-display2">
-        <br>
-        <img src="{{ app.samplePic1 }}">
-        <img src="{{ app.samplePic2 }}">
-        <img src="{{ app.samplePic3 }}">
-    </div>
+    <div class="image-wrapper">
+			<div id="slider4" class="text-center">
+        {% for image in app.samplepic_set.all %}
+          <div class="image-slide">
+            <img src="{{ image.imgUrl }}">
+          </div>
+        {% endfor %}
+			</div>
+		</div>
     <br>
 
 </div>
@@ -119,5 +122,39 @@
     </div>
 
 </body>
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides((slideIndex += n));
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides((slideIndex = n));
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {
+        slideIndex = 1;
+      }
+      if (n < 1) {
+        slideIndex = slides.length;
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+</script>
 
 </html>

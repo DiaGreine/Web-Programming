@@ -33,10 +33,12 @@
         <div class="numbertext">1 / 3</div>
         {% for banner in banner_list %}
           {% if banner.id == 0 %}
-          <img
-            src="{{ banner.imgUrl }}"
-            style="width:100%"
-          />
+            <a href="{% url 'ranking' %}">
+              <img
+                src="{{ banner.imgUrl }}"
+                style="width:100%"
+              />
+            </a>
           {% endif %}
         {% endfor %}
       </div>
@@ -45,9 +47,11 @@
         <div class="numbertext">2 / 3</div>
         {% for banner in banner_list %}
           {% if banner.id == 1 %}
-              <img src="{{ banner.imgUrl }}"
-                   style="width:100%"
-              />
+            <a href="{% url 'app_detail' name='Azur Lane' category='Action' %}">
+                <img src="{{ banner.imgUrl }}"
+                     style="width:100%"
+                />
+            </a>
           {% endif %}
         {% endfor %}
       </div>
@@ -56,10 +60,12 @@
         <div class="numbertext">3 / 3</div>
         {% for banner in banner_list %}
           {% if banner.id == 2 %}
-          <img
-            src="{{ banner.imgUrl }}"
-            style="width:100%"
-          />
+            <a href="{% url 'category' %}">
+              <img
+                src="{{ banner.imgUrl }}"
+                style="width:100%"
+              />
+            </a>
           {% endif %}
         {% endfor %}
       </div>
@@ -111,7 +117,7 @@
             {% endfor %}
         </display>
         <display>
-          <button><a href="" style="text-decoration: none;color:white">More</a></button>
+          <button><a href="{% url 'ranking' %}" style="text-decoration: none;color:white">More</a></button>
         </display>
       <br><br>
       </div>
@@ -124,7 +130,7 @@
           {% if banner.id == 0 %}
             <a href="{% url 'app_detail' name=banner.app.name category=banner.app.category.name %}">
               <display>
-                <img src="{{ banner.imgUrl }}" />
+                <img src="{{ banner.imgUrl }}"/>
               </display>
             </a>
           {% endif %}

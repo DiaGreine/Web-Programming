@@ -30,9 +30,6 @@ class App(models.Model):
   # popularity = models.IntegerField(default=0)
   description = models.TextField()
   imgUrl = models.CharField(max_length=100, default="#")
-  samplePic1 = models.CharField(max_length=100, default="#")
-  samplePic2 = models.CharField(max_length=100, default="#")
-  samplePic3 = models.CharField(max_length=100, default="#")
 
   def __str__(self):
     return self.name
@@ -70,3 +67,11 @@ class MatchTable(models.Model):
 
   def __str__(self):
     return self.name.name + " : " + self.app.name + " : " + str(self.rank)
+
+class SamplePic(models.Model):
+  name = models.CharField(max_length=50)
+  owner = models.ForeignKey(App, on_delete=models.CASCADE)
+  imgUrl = models.CharField(max_length=100, default='#')
+
+  def __str__(self):
+    return self.owner.name + " : " + self.name
