@@ -11,21 +11,18 @@
         <img class="logo" src="{% static "assets/img/MGDB_text_icon.png" %}" style="margin-bottom:-8px; margin-top:-10px">
       </a>
       <div style="align-items: center;">
-        
         <a href="{% url 'search' %}">Search</a>
-
         <div class="dropdown">
           <button class="dropbtn">
             Catalogue
             <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-content">
-            <a href="#">All Games</a>
-            <a href="rankings.html">Ranking</a>
-            <a href="#">Categories</a>
+            <a href="{% url 'ranking' %}">Ranking</a>
+            <a href="{% url 'category' %}">Categories</a>
           </div>
         </div>
-  
+
       </div>
     </div>
 
@@ -48,10 +45,9 @@
         <div class="numbertext">2 / 3</div>
         {% for banner in banner_list %}
           {% if banner.id == 1 %}
-          <img
-            src="{{ banner.imgUrl }}"
-            style="width:100%"
-          />
+              <img src="{{ banner.imgUrl }}"
+                   style="width:100%"
+              />
           {% endif %}
         {% endfor %}
       </div>
@@ -89,28 +85,35 @@
         </header>
 
         <display>
-          <a class="prev">&#10094;</a>
             {% for object in collection %}
               {% if object.name.name == "Top Games" %}
+                {% if object.rank == 0 %}
+                    <a href="{% url 'app_detail' name=object.app.name category=object.app.category.name %}">
+                        <game><img src="{{ object.app.imgUrl }}"></game>
+                    </a>
+                {% endif %}
                 {% if object.rank == 1 %}
-                  <game><img src="{{ object.app.imgUrl }}"></game>
+                    <a href="{% url 'app_detail' name=object.app.name category=object.app.category.name %}">
+                        <game><img src="{{ object.app.imgUrl }}"></game>
+                    </a>
                 {% endif %}
                 {% if object.rank == 2 %}
-                  <game><img src="{{ object.app.imgUrl }}"></game>
+                  <a href="{% url 'app_detail' name=object.app.name category=object.app.category.name %}">
+                      <game><img src="{{ object.app.imgUrl }}"></game>
+                  </a>
                 {% endif %}
                 {% if object.rank == 3 %}
-                  <game><img src="{{ object.app.imgUrl }}"></game>
-                {% endif %}
-                {% if object.rank == 4 %}
-                  <game><img src="{{ object.app.imgUrl }}"></game>
+                  <a href="{% url 'app_detail' name=object.app.name category=object.app.category.name %}">
+                        <game><img src="{{ object.app.imgUrl }}"></game>
+                    </a>
                 {% endif %}
               {% endif %}
             {% endfor %}
-          <a class="next">&#10095;</a>
         </display>
         <display>
           <button><a href="" style="text-decoration: none;color:white">More</a></button>
         </display>
+      <br><br>
       </div>
     </div>
 
@@ -139,24 +142,24 @@
     
     
 		
-		<div class="col-12">
+    <div class="col-12">
       <div class="external-link" style="padding-bottom: 40px;">
         <br><br>
-				<header>External Links</header>
-				<wrapper>
-						<a>&bull; Link1</a>
-						<a>&bull; Link1</a>
-						<a>&bull; Link1</a>
-						<a>&bull; Link1</a>
-				</wrapper>
-				<wrapper>
-						<a>&bull; Link1</a>
-						<a>&bull; Link1</a>
-						<a>&bull; Link1</a>
-						<a>&bull; Link1</a>
-				</wrapper>
-			</div>
-		</div>
+        <header>External Links</header>
+        <br><br>
+          <wrapper>
+              <a href="https://play.google.com/store?hl=en">Play Store</a>
+              <a href="https://www.apkmirror.com/">APK Mirror</a>
+              <a href="https://www.apple.com/ios/app-store/">Apple App Store</a>
+              <a href="https://www.apple.com/th/apple-arcade/">Apple Arcade</a>
+              </wrapper>
+          <wrapper>
+            <a>&nbsp;</a>
+            <a>Ⓒ 2019 MGDB</a>
+              <a>&nbsp;</a>
+          </wrapper>
+      </div>
+    </div>
   </body>
 
   <script>

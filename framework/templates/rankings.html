@@ -1,12 +1,14 @@
 {% load static %}
+{% load operation %}
 <html>
-  <head>
+    
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="{% static 'css/style.css' %}" />
   </head>
-
-  <body>
-    <div class="navbar">
+<body>
+    <!-- top bar -->
+     <div class="navbar">
       <a href="{% url 'home' %}">
         <img class="logo" src="{% static "assets/img/MGDB_text_icon.png" %}" style="margin-bottom:-8px; margin-top:-10px">
       </a>
@@ -26,37 +28,33 @@
       </div>
     </div>
 
-    <!-- Content -->
-    <div class="search-result_banner">
-      <header>Results</header>
-    </div>
 
-    <div class="search-result">
-      <div class="col-9">
-        {% for app in search_result %}
-          <container>
-            <app>
-              <a href="{% url 'app_detail' name=app.name category=app.category.name %}">
-                  <img src="{{ app.imgUrl }}">
-              </a>
-              <detail>
-                <name>{{ app.name }}</name><br>
-                  <category>{{ app.category.name }}</category>
-                <p>
-                  {{ app.description }}
-                </p>
-              </detail>
-            </app>
-          </container>
-        {% endfor %}
-      </div>
-
-      <div class="col-2">
-        <back>
-            <a href="{% url 'search' %}">Back</a><br>
-        </back>
-      </div>
+    <div class="col-12">
+        <div class="ranking-page-title">
+            <header>Top Games of All Time<br><Br>
+            </header>
+        </div>
+        <div class="ranking-page">
+            {% for row in table %}
+                {% if row.rank|modulo:5 == 0 %}
+                    <display>
+                {% endif %}
+                <game>
+                    <a href="{% url 'app_detail' name=row.app.name category=row.app.category.name %}">
+                        <img src="{{ row.app.imgUrl }}"><br>
+                        {{ row.app.name }}
+                    </a>
+                </game>
+                {% if row.rank|modulo_plusone:5 and row.rank != 0 %}
+                    </display>
+                {% endif %}
+            {% endfor %}
+            
+            <br><br>
+        </div>
     </div>
+    <br>
+
     <div class="col-12">
       <div class="external-link" style="padding-bottom: 40px;">
         <br><br>
@@ -75,5 +73,5 @@
           </wrapper>
       </div>
     </div>
-  </body>
+</body>
 </html>

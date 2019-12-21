@@ -6,26 +6,23 @@
   </head>
 
   <body>
-    <div class="navbar">
+   <div class="navbar">
       <a href="{% url 'home' %}">
         <img class="logo" src="{% static "assets/img/MGDB_text_icon.png" %}" style="margin-bottom:-8px; margin-top:-10px">
       </a>
       <div style="align-items: center;">
-        
         <a href="{% url 'search' %}">Search</a>
-
         <div class="dropdown">
           <button class="dropbtn">
             Catalogue
             <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-content">
-            <a href="#">All Games</a>
-            <a href="rankings.html">Ranking</a>
-            <a href="#">Categories</a>
+            <a href="{% url 'ranking' %}">Ranking</a>
+            <a href="{% url 'category' %}">Categories</a>
           </div>
         </div>
-  
+
       </div>
     </div>
 
@@ -54,18 +51,31 @@
           <header>Categories:</header>
           <wrapper>
             <input type="radio" name="category" value="" checked> None
-            <input type="radio" name="category" value="Action"> Action
-            <input type="radio" name="category" value="RPG"> RPG
-            <input type="radio" name="category" value="Music"> Music
-            <input type="radio" name="category" value="Music"> Casual
-            <input type="radio" name="category" value="Racing"> Racing
-            <input type="radio" name="category" value="Cooking"> Cooking
-            <input type="radio" name="category" value="Horror"> Horror
+            {% for category in categorires %}
+                <input type="radio" name="category" value="{{ category.name }}"> {{ category.name }}
+            {% endfor %}
           </wrapper>
         </div>
       </div>
-
     </form>
+      <div class="col-12">
+          <div class="external-link" style="padding-bottom: 40px;">
+            <br><br>
+            <header>External Links</header>
+            <br><br>
+              <wrapper>
+                  <a href="https://play.google.com/store?hl=en">Play Store</a>
+                  <a href="https://www.apkmirror.com/">APK Mirror</a>
+                  <a href="https://www.apple.com/ios/app-store/">Apple App Store</a>
+                  <a href="https://www.apple.com/th/apple-arcade/">Apple Arcade</a>
+                  </wrapper>
+              <wrapper>
+                <a>&nbsp;</a>
+                <a>Ⓒ 2019 MGDB</a>
+                  <a>&nbsp;</a>
+              </wrapper>
+          </div>
+        </div>
   </body>
 
 </html>

@@ -1,0 +1,80 @@
+{% load static %}
+{% load operation %}
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+</head>
+
+<body>
+    <div class="navbar">
+      <a href="{% url 'home' %}">
+        <img class="logo" src="{% static "assets/img/MGDB_text_icon.png" %}" style="margin-bottom:-8px; margin-top:-10px">
+      </a>
+      <div style="align-items: center;">
+        <a href="{% url 'search' %}">Search</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Catalogue
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="{% url 'ranking' %}">Ranking</a>
+            <a href="{% url 'category' %}">Categories</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    {% for category in categories %}
+        <!-- 1 category -->
+        <div class="col-12">
+            <div class="category-banner">
+                <header>{{ category.name }}</header>
+            </div>
+        </div>
+
+        <div class="col-2"></div>
+        <div class="col-8">
+            <div class="category-page">
+                {% for app in category.app_set.all %}
+                    {% if forloop.counter0|modulo:5 == 0 %}
+                        <display>
+                    {% endif %}
+                        <game><a href="{% url 'app_detail' name=app.name category=category.name %}"><img
+                                src="{{ app.imgUrl }}">
+                        <br>
+                        {{ app.name }}</a></game>
+                    {% if forloop.counter0|modulo_plusone:5 and forloop.counter0 != 0 %}
+                        </display>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+        <div class="col-2"></div>
+
+        <!-- end category -->
+    {% endfor %}
+
+    <div class="col-12">
+        <div class="external-link" style="padding-bottom: 40px;">
+            <br><br>
+            <header>External Links</header>
+            <br><br>
+            <wrapper>
+                <a href="https://play.google.com/store?hl=en">Play Store</a>
+                <a href="https://www.apkmirror.com/">APK Mirror</a>
+                <a href="https://www.apple.com/ios/app-store/">Apple App Store</a>
+                <a href="https://www.apple.com/th/apple-arcade/">Apple Arcade</a>
+            </wrapper>
+            <wrapper>
+                <a>&nbsp;</a>
+                <a>Ⓒ 2019 MGDB</a>
+                <a>&nbsp;</a>
+            </wrapper>
+        </div>
+    </div>
+
+</body>
