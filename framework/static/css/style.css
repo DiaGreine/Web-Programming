@@ -153,18 +153,22 @@ tr:nth-child(even) {
 
 .appdetails
 {
+  color: rgb(32,32,32);
+}
+
+.appdetails pre
+{
   font-family: Arial, Helvetica, sans-serif;
-  color:white;
   font-size:14px;
   padding-left: 10px;
-  color: rgb(32,32,32);
+  white-space: pre-wrap;
 }
 
 .appminordetails
 {
   font-family: Arial, Helvetica, sans-serif;
   color:white;
-  font-size:10px;
+  font-size:14px;
   padding-left: 10px;
   color: rgb(32,32,32);
 }
@@ -185,7 +189,7 @@ tr:nth-child(even) {
 
 .games-display img{
   margin-top: 10px;
-  height: 85%;
+  height: auto;
   width: 85%;
 }
 
@@ -232,6 +236,7 @@ tr:nth-child(even) {
   filter: brightness(1.2);
   transition: 0.2s;
 }
+
 
 /* Hide the images by default */
 .mySlides {
@@ -941,14 +946,6 @@ input:-webkit-autofill:active  {
   font-family: Arial, Helvetica, sans-serif;
   background-color: rgb(15, 200, 255);
 }
-/* 
-.category-banner{
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(15, 200 ,255);
-} */
 
 .category-banner header{
   font-family: Arial, Helvetica, sans-serif;
@@ -1017,6 +1014,29 @@ input:-webkit-autofill:active  {
   text-decoration: none;
   color: white;
 }
+
+.image-wrapper{
+  width: auto; 
+  overflow-x:scroll;     
+  white-space: nowrap;
+}
+
+.image-wrapper img{
+  height: 400px;
+}
+
+.image-slide{
+  background: #ccc;
+  height: 400px;
+  display: inline-block;
+  width: auto;
+}
+
+.image-slide img
+{
+  height:400px;
+}
+
 
 
 @-webkit-keyframes fade {
