@@ -311,9 +311,9 @@ tr:nth-child(even) {
 }
 
 .ranking-label {
-	margin-top: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   background-color: rgb(238, 238, 238);
-	height: 640px;
 }
 
 .ranking-label header{
@@ -337,20 +337,20 @@ tr:nth-child(even) {
 	display:flex;
 	justify-content: center;
 	align-items: center;
-	margin-top: 40px;
+	margin-top: 10px;
 }
 
 .ranking-label display game{
-  inline-size: 300px;
   /* background-size: 400px; */
 	display:inline-block;
-	padding: 10px;
-	margin-left: 20px;
-	margin-right: 20px;
+  padding: 10px;
+  border-radius: 5px;
+
 }
 
 .ranking-label display game img{
-  width: 300px;
+  width: 260px;
+  border-radius: 5px;
 }
 
 .ranking-label display game img:hover{
@@ -395,6 +395,134 @@ tr:nth-child(even) {
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
+
+.ranking-list {
+	margin-top: 30px;
+  background: #c5c5c5;
+  height: 1000px;
+}
+
+.ranking-list header{
+	padding-top: 30px;
+	text-align: center;
+	font-size: 40px;
+	color: rgb(0, 0, 0);
+}
+
+.ranking-page-title {
+	margin-top: 20px;
+  background-image: 
+  linear-gradient(to bottom, rgba(155, 155, 155, 0),rgba(155, 155, 155, 0),rgba(155, 155, 155, 0), rgba(32, 32, 32)), 
+  linear-gradient(to top, rgba(155, 155, 155, 0),rgba(155, 155, 155, 0),rgba(155, 155, 155, 0), rgb(32, 32, 32)),
+  url(https://cdn.discordapp.com/attachments/657063286306635776/657585331142656001/phonegames.png);
+  background-size: cover;
+  background-position-y: bottom;
+  height: 300px;
+}
+
+.ranking-page-title header{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+	padding-top: 100px;
+	text-align: center;
+  font-size: 40px;
+  text-shadow: 2px 2px black;
+	color: rgb(238, 238, 238);
+}
+
+.ranking-page {
+	margin-top: 20px;
+}
+
+.ranking-page header{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+	padding-top: 30px;
+	text-align: center;
+	font-size: 40px;
+	color: rgb(32, 32, 32);
+}
+
+.ranking-page header subheader{
+  font-family: Arial, Helvetica, sans-serif;
+	padding-top: 3px;
+	text-align: center;
+	font-size: 18px;
+	color: rgb(32, 32, 32);
+}
+
+.ranking-page display {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10px;
+}
+
+.ranking-page display game{
+  /* background-size: 400px; */
+	display:inline-block;
+  padding: 20px;
+  border-radius: 5px;
+
+}
+
+.ranking-page display game img{
+  width: 150px;
+  border-radius: 5px;
+}
+
+.ranking-page display game img:hover{
+  opacity: 0.6;
+  transition: 0.5s;
+  width: 185px;
+  border-radius: 5px;
+} 
+
+.ranking-page display game a{
+  /* border-style: solid;
+  border-width: 1px;  */
+  font-size: 14px;
+  text-decoration: none;
+  color: white;
+}
+
+.ranking-page button{
+  font-family: Arial, Helvetica, sans-serif;
+	cursor: pointer;
+	font-size: 20px;
+	margin-top: 20px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 35%;
+	padding-right: 35%;
+	background-color: rgb(15, 200, 255);
+	color: white;
+	border: none;
+	transition: 0.4s;
+}
+
+.ranking-page button:hover {
+	background-color: rgb(45, 45, 45);
+	transition: 0.4s;
+}
+
+
+
+.ranking-page .prev, .ranking-page .next {
+  cursor: pointer;
+  position: relative;
+  /* top: 50%; */
+  width: auto;
+  margin-top: -22px;
+  padding: 20px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 50px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
 
 .editor-label {
   margin-top: 30px;
