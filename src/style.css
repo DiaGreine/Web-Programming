@@ -186,6 +186,7 @@ tr:nth-child(even) {
 .games-display img{
   margin-top: 10px;
   height: 85%;
+  width: 85%;
 }
 
 .games-display2 {
@@ -197,7 +198,8 @@ tr:nth-child(even) {
 }
 
 .games-display2 img{
-  height: auto;
+  width: 32%; 
+  height:auto;
 }
 
 .related-apps
