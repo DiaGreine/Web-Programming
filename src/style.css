@@ -123,43 +123,72 @@ tr:nth-child(even) {
 
 .apptitle
 {
-  color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(238, 238, 238);
   font-size: 30px;
+  font-weight: bold;
   padding-left: 10px;
+  
+}
+
+.apptitle2
+{
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(238, 238, 238);
+  font-size: 30px;
+  font-weight: bold;
+  padding-left: 10px;
+  color: rgb(32,32,32);
 }
 
 .appsubtitle
 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
   color: rgb(255, 255, 255);
   font-size: 20px;
   padding-left: 10px;
+  color: rgb(32,32,32);
 }
 
 .appdetails
 {
+  font-family: Arial, Helvetica, sans-serif;
   color:white;
   font-size:14px;
   padding-left: 10px;
+  color: rgb(32,32,32);
 }
 
 .appminordetails
 {
+  font-family: Arial, Helvetica, sans-serif;
   color:white;
   font-size:10px;
   padding-left: 10px;
+  color: rgb(32,32,32);
 }
 
+.games-display-bg{
+  background-image: 
+  linear-gradient(to bottom, rgba(155, 155, 155, 0),rgba(155, 155, 155, 0),rgba(155, 155, 155, 0), rgba(32, 32, 32)), 
+  linear-gradient(to top, rgba(155, 155, 155, 0),rgba(155, 155, 155, 0),rgba(155, 155, 155, 0), rgb(32, 32, 32)),
+  url(https://i.pinimg.com/originals/f4/37/da/f437da3e00763c228fc0481d0ebcf775.png);
+  background-size: cover;
+  background-position-y: top;
+}
 .games-display {
-	/* border-radius: 10px;  rgb(236, 42, 65) red options #a52752 */ 
-	padding: 20px 10px;
-  box-shadow: 0px 1px 0px 0px black;
-  background-color: rgb(17, 17, 17);
+  /* border-radius: 10px;  rgb(236, 42, 65) red options #a52752 */ 
+  padding-top: 1px;
+
+  /* background-color: rgb(17, 17, 17); */
 }
 .games-display2 {
 	/* border-radius: 10px;  rgb(236, 42, 65) red options #a52752 */ 
 	padding: 20px 10px;
   box-shadow: 0px 1px 2px 0px black;
-  background-color: rgb(65, 65, 65);
+  background-color: rgb(238, 238, 238);
+  color: rgb(32,32,32);
 }
 
 .related-apps
