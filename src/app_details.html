@@ -78,11 +78,21 @@
 			</div>
 		</div>
 		<br>
-		<div class="games-display2">
-			<br>
-			<img src="../assets/img/mockAPP.png">	
-			<img src="../assets/img/mockAPP.png">
-			<img src="../assets/img/mockAPP.png">
+		<div class="image-wrapper">   
+			<div id="slider4" class="text-center">
+				<div class="image-slide">
+					<img src="https://cdn.discordapp.com/attachments/657572950404497427/657791411151831061/Azurlane1.webp">
+				</div>
+				<div class="image-slide">
+					<img src="https://cdn.discordapp.com/attachments/657572950404497427/657574777405440001/Fate-Gran-Order.jpg">
+				</div>
+				<div class="image-slide">
+					<img src="https://cdn.discordapp.com/attachments/657572950404497427/657791411151831061/Azurlane1.webp">
+				</div>
+				<div class="image-slide">
+					<img src="https://cdn.discordapp.com/attachments/657572950404497427/657574777405440001/Fate-Gran-Order.jpg">
+				</div>
+			</div>
 		</div>
 		<br>
 		
@@ -134,9 +144,42 @@
         <a>&nbsp;</a>
         </wrapper>
         </div>
-    </div>
-    
+	</div>   
 
 </body>
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides((slideIndex += n));
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides((slideIndex = n));
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {
+        slideIndex = 1;
+      }
+      if (n < 1) {
+        slideIndex = slides.length;
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+</script>
 
 </html>
