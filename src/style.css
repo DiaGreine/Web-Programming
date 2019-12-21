@@ -191,6 +191,10 @@ tr:nth-child(even) {
   color: rgb(32,32,32);
 }
 
+.games-display2 img{
+  height: auto;
+}
+
 .related-apps
 {
   width:90%; 
@@ -802,7 +806,7 @@ input:-webkit-autofill:active  {
   margin-left: 40px;
 }
 
-.search-result sort {
+.search-result back {
   display: flex;
   background-color: rgb(238,238,238);
   margin-left: 5%;
@@ -812,7 +816,7 @@ input:-webkit-autofill:active  {
   border-radius: 5px;
 }
 
-.search-result sort header {
+.search-result back button {
   font-size: 30px;
   color: rgb(32,32,32);
   margin: 30px;
