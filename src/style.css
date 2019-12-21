@@ -816,10 +816,11 @@ input:-webkit-autofill:active  {
   border-radius: 5px;
 }
 
-.search-result back button {
+.search-result back a {
   font-size: 30px;
   color: rgb(32,32,32);
   margin: 30px;
+  text-decoration: none;
 }
 
 /* Ranking Page */
