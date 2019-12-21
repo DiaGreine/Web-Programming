@@ -185,7 +185,7 @@ tr:nth-child(even) {
 
 .games-display img{
   margin-top: 10px;
-  height: 85%;
+  height: auto;
   width: 85%;
 }
 
