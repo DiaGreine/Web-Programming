@@ -153,11 +153,15 @@ tr:nth-child(even) {
 
 .appdetails
 {
+  color: rgb(32,32,32);
+}
+
+.appdetails pre
+{
   font-family: Arial, Helvetica, sans-serif;
-  color:white;
   font-size:14px;
   padding-left: 10px;
-  color: rgb(32,32,32);
+  white-space: pre-wrap;
 }
 
 .appminordetails
