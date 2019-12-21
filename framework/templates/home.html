@@ -122,19 +122,25 @@
         <header>Editor's Picks</header><br>
         {% for banner in editor_pick %}
           {% if banner.id == 0 %}
-            <display>
-              <img src="{{ banner.imgUrl }}" />
-            </display>
+            <a href="{% url 'app_detail' name=banner.app.name category=banner.app.category.name %}">
+              <display>
+                <img src="{{ banner.imgUrl }}" />
+              </display>
+            </a>
           {% endif %}
           {% if banner.id == 1 %}
-            <display>
-              <img src="{{ banner.imgUrl }}" />
-            </display>
+            <a href="{% url 'app_detail' name=banner.app.name category=banner.app.category.name %}">
+              <display>
+                <img src="{{ banner.imgUrl }}" />
+              </display>
+            </a>
           {% endif %}
           {% if banner.id == 2 %}
-            <display>
-              <img src="{{ banner.imgUrl }}" />
-            </display>
+            <a href="{% url 'app_detail' name=banner.app.name category=banner.app.category.name %}">
+              <display>
+                <img src="{{ banner.imgUrl }}" />
+              </display>
+            </a>
           {% endif %}
         {% endfor %}
       </div>

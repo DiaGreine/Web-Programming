@@ -36,8 +36,8 @@
                 <div class="games-display" style="height: 250px;"></div>
             </div>
             <div class="col-2">
-                <div class="games-display" style="height: 250px;">
-                    <img src="{{ app.imgUrl }}" style="width:100%">
+                <div class="games-display">
+                    <img src="{{ app.imgUrl }}">
                 </div>
             </div>
             <div class="col-6">
@@ -57,6 +57,7 @@
     </div>
     <!-- app details  -->
     <div class = "col-2"></div>
+
     <div class="col-5">
     <div class="games-display2">
 
@@ -77,9 +78,9 @@
     <br>
     <div class="games-display2">
         <br>
-        <img src="{{ app.samplePic1 }}" style="width: 32%; height:300px">
-        <img src="{{ app.samplePic2 }}"  style="width: 32%; height:300px">
-        <img src="{{ app.samplePic3 }}"  style="width: 32%; height:300px">
+        <img src="{{ app.samplePic1 }}">
+        <img src="{{ app.samplePic2 }}">
+        <img src="{{ app.samplePic3 }}">
     </div>
     <br>
 
@@ -87,7 +88,7 @@
     {% endfor %}
 
 	<div class="col-3">
-		<div class="apptitle" style="padding-left: 20px;color:rgb((238,238,238)">
+		<div class="apptitle" style="padding-left: 20px;color:rgb(238,238,238)">
 			<p>Related apps</p>
 		</div>
         {% for app in related %}

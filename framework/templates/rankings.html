@@ -34,6 +34,8 @@
             <header>Top Games of All Time<br><Br>
             </header>
         </div>
+    <div class="col-2"></div>
+    <div class="col-8">
         <div class="ranking-page">
             {% for row in table %}
                 {% if row.rank|modulo:5 == 0 %}
@@ -51,8 +53,10 @@
             {% endfor %}
             
             <br><br>
+            </div>
         </div>
     </div>
+    <div class="col-2"></div>
     <br>
 
     <div class="col-12">
