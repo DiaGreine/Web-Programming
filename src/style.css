@@ -788,6 +788,14 @@ input:-webkit-autofill:active  {
   font-weight: bold;
 }
 
+.search-result app category
+{
+  margin-left: 40px;
+  color: rgb(32,32,32);
+  font-size: 15px;
+  font-weight: lighter;
+}
+
 .search-result app p {
   font-size: 20px;
   color: rgb(32,32,32);
