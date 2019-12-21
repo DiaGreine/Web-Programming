@@ -224,12 +224,13 @@ tr:nth-child(even) {
 
 .slideshow-container img {
 	width: auto;
-	height: 600px;
+  height: 600px;
+  transition: 0.2s;
 }
 
 .slideshow-container img:hover {
   filter: brightness(1.2);
-  transition: 0.5s;
+  transition: 0.2s;
 }
 
 /* Hide the images by default */
@@ -563,11 +564,12 @@ tr:nth-child(even) {
   width: 100%;
   height: 500px;
   object-fit: cover;
+  transition: 0.2;
 }
 
 .editor-label img:hover {
   opacity:0.8;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 
 .editor-label text {
