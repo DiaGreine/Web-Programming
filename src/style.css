@@ -822,7 +822,9 @@ input:-webkit-autofill:active  {
   font-size: 18px;
   color: rgb(32,32,32);
   margin-left: 40px;
-  white-space: pre-wrap;
+  white-space: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
 }
 
 .search-result back {
